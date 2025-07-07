@@ -1,5 +1,11 @@
-import Router from './Router';
+import Header from '@components/Header'
+import Router from './Router'
 
 function App() {
-  return <Router />;
+  return <>
+    <Header />
+    <Router />
+  </>
 }
+
+export default App
