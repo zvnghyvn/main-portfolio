@@ -26,7 +26,7 @@ const projects = [
       },
     ],
     techStack: ['React', 'styled-components', 'Axios', 'ESLint'],
-    tools: [],
+    tools: ['Github', 'Postman', 'Figma', 'Notion', 'Canva', 'Discord'],
     detailPage: '@pages/ProjectPlan/spillit',
     demoUrl: '',
   },
@@ -45,8 +45,10 @@ const projects = [
     ],
     media: [],
     techStack: ['React', 'TypeScript', 'SCSS', 'Vite', 'IndexedDB'],
-    tools: [],
+    tools: ['Github', 'Figma', 'Notion'],
     detailPage: '@pages/ProjectPlan/spillit',
     demoUrl: 'https://spill-it.vercel.app',
   },
 ]
+
+export default projects
