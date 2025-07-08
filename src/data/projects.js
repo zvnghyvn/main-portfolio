@@ -16,7 +16,7 @@ const projects = [
     media: [
       {
         type: 'image',
-        src: '/images/spillit01.png',
+        src: '/images/tick-mark.png',
         alt: 'Spillit 메인 화면',
       },
       {
