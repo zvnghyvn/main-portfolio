@@ -11,9 +11,9 @@ const Home = () => {
   return (
     <>
       <main>
-        <About />
-        <Skills />
-        <Projects />
+        {/* <About /> */}
+        {/* <Skills /> */}
+        {/* <Projects /> */}
         <Experiences />
         <Education />
         <Certificates />

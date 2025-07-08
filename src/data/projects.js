@@ -21,8 +21,9 @@ const projects = [
       },
       {
         type: 'youtube',
-        src: 'https://youtu.be/abc123',
-        thumbnail: '/images/spillit-thumb.png',
+        src: '/images/spillit-thumb.png',
+        alt: 'Spillit 발표 영상 / 구현 영상',
+        link: 'https://youtu.be/abc123',
       },
     ],
     techStack: ['React', 'styled-components', 'Axios', 'ESLint'],

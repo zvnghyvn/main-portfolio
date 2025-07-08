@@ -1,6 +1,5 @@
 import skillList from '@data/skills'
 
-
 const SkillsSection = () => {
   return (
     <section id="skills">
