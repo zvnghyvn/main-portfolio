@@ -8,7 +8,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>
+        Personal Projects
+        <span> Front-end</span>
+      </h2>
 
       {projectList.map((project) => (
         <ProjectCard key={project.id} project={project} onImageClick={setModalImage} />

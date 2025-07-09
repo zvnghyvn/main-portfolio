@@ -1,6 +1,7 @@
 const education = [
   {
-    title: '네이버 클라우드 캠프\nAIaaS 개발자 과정',
+    id: 'naverCloudCampAcademy',
+    title: '네이버 클라우드 캠프 /nAIaaS 개발자 과정',
     period: '2024.04-2024.10',
     features: [
 			'네이버 클라우드 캠프의 AIaas 개발자 양성 6개월 과정 수료',
@@ -10,6 +11,7 @@ const education = [
     ]
   },
 	{
+    id: 'sesacHackathon',
     title: 'SeSAC 해커톤',
     period: '2024.08',
     features: [
@@ -19,7 +21,8 @@ const education = [
     ]
   },
 	{
-    title: 'UX/UI 디자인\n웹퍼블리셔 양성 과정',
+    id: 'uiuxAcademy',
+    title: 'UX/UI 디자인 /n웹퍼블리셔 양성 과정',
     period: '2021.01-2021.04',
     features: [
 			'하이미디어 아카데미의 UX/UI 디자인 웹퍼블리셔 양성 4개월 과정 수료',
@@ -28,6 +31,7 @@ const education = [
     ]
   },
 	{
+    id: 'designAcademy',
     title: '웹디자인 양성 과정',
     period: '2017.02-2017.08',
     features: [

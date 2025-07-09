@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation'
 
 const AboutSection = () => {
  return (
-  <div className="">
+  <section id="about">
     <h1>
       <TypeAnimation 
         sequence={['소통하는', 2500, '꾸준히 성장하는', 2500, '적응력이 빠른', 2500]}
@@ -19,7 +19,7 @@ const AboutSection = () => {
       <br />
       열정 가득한 프론트엔드 개발자예요
     </p>
-  </div>
+  </section>
  )
 }
 

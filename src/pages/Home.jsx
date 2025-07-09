@@ -2,6 +2,7 @@
 import About from '@sections/AboutSection'
 import Skills from '@sections/SkillsSection'
 import Projects from '@sections/ProjectsSection'
+import Works from '@sections/WorksSection'
 import Experiences from '@sections/ExperiencesSection'
 import Education from '@sections/EducationSection'
 import Certificates from '@sections/CertificatesSection'
@@ -13,11 +14,12 @@ const Home = () => {
       <main>
         {/* <About /> */}
         {/* <Skills /> */}
-        <Projects />
-        <Experiences />
-        <Education />
-        <Certificates />
-        <Contact />
+        {/* <Projects /> */}
+        <Works />
+        {/* <Experiences /> */}
+        {/* <Education /> */}
+        {/* <Certificates /> */}
+        {/* <Contact /> */}
       </main>
     </>
   )

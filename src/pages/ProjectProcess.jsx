@@ -1,6 +1,8 @@
 
 const ProjectProcess = () => {
-  return <></>
+  return (
+    <></>
+  )
 }
 
 export default ProjectProcess

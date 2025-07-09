@@ -1,5 +1,6 @@
 const experiences = [
   {
+    id: 'kdesign',
     workplace: '케이디자인',
     company: '(주)케이에이치이노베이션',
     team: '기술개발팀',
