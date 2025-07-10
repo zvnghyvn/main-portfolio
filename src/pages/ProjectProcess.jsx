@@ -37,6 +37,7 @@ const ProjectProcess = () => {
           {/* 주요 업무 및 구현 기능 */}
 
           {/* 트러블 슈팅 */}
+          <pre><code>{troubleshooting.code}</code></pre>
 
           {/* 프로젝트 흐름도 */}
 
