@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
 
 const ProjectCard = ({ project, onImageClick }) => {
   // 이미지 클릭 시
@@ -22,7 +23,7 @@ const ProjectCard = ({ project, onImageClick }) => {
         <span className="project-period">{project.period}</span>
 
         <div className="project-btns">
-          <Link to={project.detailPage} className="btn-detail">
+          <Link to={`/project/process/${project.id}`} className="btn-detail">
             작업 과정 보기 &gt;
           </Link>
           <a href={project.demoUrl} target="_blank" className="btn-demo">
@@ -34,15 +35,11 @@ const ProjectCard = ({ project, onImageClick }) => {
       {/* 오른쪽 영역 */}
       <div className="project-details">
         <h4>Description</h4>
-        <div className="project-description">
-          <span>📌</span>
-          {project.description.split('/n').map((line, index) => (
-            <p key={index}>
-              <span>{line}</span>
-              <br />
-            </p>
-          ))}
+
+        <div key={project.id} className="project-description">
+          <ReactMarkdown>{project.description}</ReactMarkdown>
         </div>
+
         <ul className="project-features">
           {project.features.map((item, index) => (
             <li key={index}>{item}</li>

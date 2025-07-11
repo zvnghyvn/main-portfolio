@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown'
 import workList from "@data/works"
 
 const WorksSection = () => {
@@ -29,12 +30,9 @@ const WorksSection = () => {
             </div>
 
             {/* 내용 영역 */}
-            <p className="work-description">
-              <span>📌</span>
-              {work.description.split('/n').map((line, index) => (
-                <span key={index}>{line}</span>
-              ))}
-            </p>
+            <div className="work-description">
+              <ReactMarkdown>{work.description}</ReactMarkdown>
+            </div>
           </li>
         ))}
       </ul>
