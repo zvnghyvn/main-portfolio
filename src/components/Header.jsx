@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import { HeaderWrapper, HeaderMain, HeaderNav } from '@styles/Header.styles';
+import ToggleDarkMode from '@components/ToggleDarkMode'
 
 const Header = () => {
   const location = useLocation()
@@ -12,7 +14,7 @@ const Header = () => {
     const storedTheme = localStorage.getItem('theme') === 'dark'
     setIsDark(storedTheme)
     document.documentElement.classList.toggle('dark', storedTheme)
-  })
+  }, [])
 
   const toggleDarkMode = () => {
     const nextTheme = !isDark
@@ -28,29 +30,32 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <HeaderWrapper>
       {/* 공통 */}
-      <div className="">
-        <p>안녕하세요. 소통하는 프론트엔드 개발자, 권정현입니다.</p>
-        <div className="">
+      <HeaderMain>
+        <p className="header-intro">
+          안녕하세요. 소통하는 프론트엔드 개발자, 권정현입니다.
+        </p>
+
+        <div className="header-contact flex">
           <a href="mailto:zvnghyvn@gmail.com">zvnghyvn@gmail.com</a>
           <span>010-8377-7210</span>
-          <div className="">
+          <div className="mode-toggle flex">
             <span>Mode</span>
-            <button onClick={toggleDarkMode}>토글</button>
+            <ToggleDarkMode isDark={isDark} toggleDarkMode={toggleDarkMode} />
           </div>
         </div>
-      </div>
+      </HeaderMain>
 
       {/* 홈 nav */}
       {isHome && (
-        <nav>
+        <HeaderNav>
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</button>
           <button onClick={() => scrollToSection('Projects')}>Projects</button>
           <button onClick={() => scrollToSection('Experiences')}>Experiences</button>
-        </nav>
+        </HeaderNav>
       )}
-    </header>
+    </HeaderWrapper>
   )
 }
 

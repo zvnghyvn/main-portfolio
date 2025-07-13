@@ -1,0 +1,51 @@
+export const theme = {
+  colors: {
+    point: '#06A2E0',
+    pointLight: 'rgba(6, 162, 224, 0.06)',
+    black: '#000000',
+    white: '#ffffff',
+    gray: 'rgba(0, 0, 0, 0.3)',
+    grayDark: 'rgba(0, 0, 0, 0.5)',
+    grayLight: 'rgba(0, 0, 0, 0.04)',
+    danger: '#e63946',
+    success: '#2a9d8f',
+  },
+  fontSize: {
+    xxs: '12px',
+    xs: '12px',
+    sm: '14px',
+    md: '15px',
+    base: '16px',
+    lg: '18px',
+    xl: '24px',
+  },
+  fontWeight: {
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+  },
+  fontFamily: {
+    ibm: `'IBM Plex Mono', monospace`,
+    pretendard: `'Pretendard', sans-serif`,
+  },
+  spacing: {
+    xs: '4px',
+    sm: '8px',
+    md: '12px',
+    base: '16px',
+    lg: '24px',
+    xl: '32px',
+  },
+  radius: {
+    sm: '4px',
+    md: '8px',
+    lg: '12px',
+    full: '9999px',
+  },
+  breakpoints: {
+    mobile: '768px',
+    tablet: '1024px',
+    desktop: '1280px',
+  },
+};
