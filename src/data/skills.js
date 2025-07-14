@@ -8,7 +8,7 @@ const skillList = [
   {
     id: 'frontEnd',
     category: 'Front-End Development',
-    tools: ['HTML', 'CSS3', 'SASS(SCSS)', 'Styled Components', 'CSS Module', 'Tailwind CSS', 'Bootstrap', 'jQuery'],
+    tools: ['HTML', 'CSS3', 'SASS(SCSS)', 'Styled Components', 'CSS Module', 'jQuery'],
   },
   {
     id: 'backEnd',

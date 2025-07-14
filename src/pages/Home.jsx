@@ -11,9 +11,9 @@ import Contact from '@sections/ContactSection'
 const Home = () => {
   return (
     <>
-      <main>
+      <main className="wd-inner">
         <About />
-        {/* <Skills /> */}
+        <Skills />
         {/* <Projects /> */}
         {/* <Works /> */}
         {/* <Experiences /> */}

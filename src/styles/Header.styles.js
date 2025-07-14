@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { bg, text, fontSize, fontWeight, media } from '@styles/mixins';
+import { bg, text, fontSize, fontWeight, gap, media } from '@styles/mixins';
 
 /* wrapper */
 export const HeaderWrapper = styled.header`
@@ -28,7 +28,7 @@ export const HeaderMain = styled.div`
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 32px;
+    ${gap('xl')}
     ${fontSize('md')}
   }
 
@@ -52,7 +52,7 @@ export const HeaderMain = styled.div`
   .header-contact .mode-toggle {
     flex-wrap: nowrap;
     align-items: center;
-    gap: 16px;
+    ${gap('base')}
 
     > span {
       ${fontSize('xs')}
@@ -89,7 +89,7 @@ export const HeaderNav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  ${gap('lg')}
   padding: 24px 0;
   
   button {
@@ -99,8 +99,15 @@ export const HeaderNav = styled.nav`
 
   // 반응형
   ${({ theme }) => media.tablet(`
+    gap: 20px;
+    padding: 20px 0;
+
     button {
       font-size: ${theme.fontSize.md};
+    }
+    
+    img {
+      width: 22px;
     }
   `)}
 `;

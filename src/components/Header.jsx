@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { HeaderWrapper, HeaderMain, HeaderNav } from '@styles/Header.styles';
 import ToggleDarkMode from '@components/ToggleDarkMode'
+import AboutDarkIcon from '../assets/images/ico_about_dark.svg'
+import AboutLightIcon from '../assets/images/ico_about_light.svg'
 
 const Header = () => {
   const location = useLocation()
@@ -50,7 +52,9 @@ const Header = () => {
       {/* 홈 nav */}
       {isHome && (
         <HeaderNav>
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</button>
+          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            {isDark ? <img src={AboutDarkIcon} alt="About" /> : <img src={AboutLightIcon} alt="About" />}
+          </button>
           <button onClick={() => scrollToSection('Projects')}>Projects</button>
           <button onClick={() => scrollToSection('Experiences')}>Experiences</button>
         </HeaderNav>

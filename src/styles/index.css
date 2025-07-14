@@ -1,4 +1,4 @@
-/* reset */
+/* reset, 공통 클래스 */
 :root {
   font-family: "IBM Plex Mono", "Pretendard", sans-serif;
   line-height: 1.4;
@@ -32,8 +32,67 @@ button {
   cursor: pointer;
 }
 
+ul, ol {
+  list-style: none;
+}
+
+/* 공통 */
+h2 {
+  margin-bottom: 80px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h2.title-sm {
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.title-sub {
+  position: relative;
+  margin-left: 32px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title-sub::after {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 0;
+  width: 1px;
+  height: 24px;
+  background-color: #ddd;
+}
+
 .flex {
   display: flex;
+}
+
+.point-word {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+span.point-word {
+  background-color: rgba(6, 162, 224, 0.1);  /*ebf8fd*/
+  color: #06A2E0;
+}
+a.point-word {
+  position: relative;
+  background-color: #06A2E0;
+  color: #fff;
+}
+a.point-word::after {
+  position: absolute;
+  left: 14px;
+  bottom: 8px;
+  width: calc(100% - 28px);
+  height: 1px;
+  background-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {

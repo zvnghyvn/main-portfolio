@@ -20,6 +20,16 @@ export const fontFamily = (name) => (props) => `
   font-family: ${props.theme.fontFamily[name]};
 `;
 
+// 간격
+export const gap = (size) => (props) => `
+  gap: ${props.theme.spacing[size]};
+`
+
+// radius
+export const radius = (size) => (props) => `
+  border-radius: ${props.theme.radius[size]};
+`
+
 // 반응형
 export const media = {
   tablet: (style) => (props) => `
