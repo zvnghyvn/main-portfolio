@@ -2,15 +2,16 @@ import ProjectCard from '@components/ProjectCard'
 import projectList from '@data/projects'
 import { useState } from 'react'
 import Modal from '@components/Modal'
+import { Project } from '@styles/sections/ProjectSection.styles';
 
 const ProjectsSection = () => {
   const [modalImage, setModalImage] = useState(null)
 
   return (
-    <section id="projects">
+    <Project id="projects">
       <h2>
         Personal Projects
-        <span> Front-end</span>
+        <span className="title-sub"> Front-end</span>
       </h2>
 
       {projectList.map((project) => (
@@ -20,7 +21,7 @@ const ProjectsSection = () => {
       {modalImage && (
         <Modal src={modalImage} onClose={() => setModalImage(null)} />
       )}
-    </section>
+    </Project>
   )
 }
 

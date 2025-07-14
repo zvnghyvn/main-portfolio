@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { bg, text, fontSize, fontWeight, gap, media } from '@styles/mixins';
-
+import { gap, bg, text, fontSize, fontWeight, media } from '@styles/mixins';
 /* wrapper */
 export const HeaderWrapper = styled.header`
   position: fixed;

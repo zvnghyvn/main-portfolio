@@ -5,7 +5,7 @@ import App from './App';
 import '@styles/index.css';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '@styles/theme';
-import { GlobalStyle } from '@styles/GlobalStyle'
+import { GlobalStyle } from '@styles/components/GlobalStyle'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

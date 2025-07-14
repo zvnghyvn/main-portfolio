@@ -18,8 +18,8 @@ const ToggleButton = styled.button`
 		top: 4px;
 		left: ${({ $isDark }) => ($isDark ? '24px' : '4px')};
 		padding: 4px;
-		border-radius: 6px;
-		background: ${({ $isDark }) => ($isDark ? '#000' : '#fff')};
+		${radius('sm')}
+		background: ${({ $isDark }) => ($isDark ? '#212121' : '#fff')};
 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 		transition: 0.3s;
 	}

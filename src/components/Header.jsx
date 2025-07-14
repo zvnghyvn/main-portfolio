@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { HeaderWrapper, HeaderMain, HeaderNav } from '@styles/Header.styles';
+import { HeaderWrapper, HeaderMain, HeaderNav } from '@styles/components/Header.styles'
 import ToggleDarkMode from '@components/ToggleDarkMode'
 import AboutDarkIcon from '../assets/images/ico_about_dark.svg'
 import AboutLightIcon from '../assets/images/ico_about_light.svg'

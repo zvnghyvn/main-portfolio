@@ -1,6 +1,9 @@
 
 import { Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
+import { Card } from '@styles/components/ProjectCard.styles';
+import BlueArrowIcon from '../assets/images/ico_arrow_b.png'
+import GlayArrowIcon from '../assets/images/ico_arrow_g.png'
 
 const ProjectCard = ({ project, onImageClick }) => {
   // 이미지 클릭 시
@@ -13,7 +16,7 @@ const ProjectCard = ({ project, onImageClick }) => {
   }
 
   return (
-    <div className="project-card flex">
+    <Card className="project-card flex">
       {/* 왼쪽 영역 */}
       <div className="project-info">
         <span className="project-keyword">{project.keyword}</span>
@@ -24,10 +27,10 @@ const ProjectCard = ({ project, onImageClick }) => {
 
         <div className="project-btns">
           <Link to={`/project/process/${project.id}`} className="btn-detail">
-            작업 과정 보기 &gt;
+            작업 과정 보기 <img src={BlueArrowIcon} alt="arrow" />
           </Link>
           <a href={project.demoUrl} target="_blank" className="btn-demo">
-            데모 사이트 보기 &gt;
+            데모 사이트 보기 <img src={GlayArrowIcon} alt="arrow" />
           </a>
         </div>
       </div>
@@ -45,7 +48,8 @@ const ProjectCard = ({ project, onImageClick }) => {
             <li key={index}>{item}</li>
           ))}
         </ul>
-        <div className="project-media">
+
+        <div className="project-media flex">
           {project.media.map((item, index) => (
             item.type === 'image' ? (
               <img key={index} src={item.src} alt={item.alt} onClick={() => handleImageClick(item.src)}/>
@@ -56,24 +60,18 @@ const ProjectCard = ({ project, onImageClick }) => {
             )
           ))}
         </div>
-        <div className="project-tech">
+
+        <div className="project-tech flex">
           <span>Tech Stack</span>
-          <ul>
-            {project.techStack.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          {project.techStack.join(', ')}
         </div>
-        <div className="project-tools">
+
+        <div className="project-tools flex">
           <span>Tools</span>
-          <ul>
-            {project.tools.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          {project.tools.join(', ')}
         </div>
       </div>
-    </div>
+    </Card>
   )
 }
 

@@ -1,12 +1,12 @@
 export const theme = {
   colors: {
     point: '#06A2E0',
-    pointLight: 'rgba(6, 162, 224, 0.06)',
-    black: '#000000',
+    pointLight: 'rgba(6, 162, 224, 0.12)',
+    black: '#212121',
     white: '#ffffff',
     gray: '#b3b3b3',
-    grayDark: '#808080',
-    grayLight: '#f5f5f5',
+    grayDark: '#A6A6A6',
+    grayLight: 'rgba(237, 237, 237, 0.5)',
     danger: '#e63946',
     success: '#2a9d8f',
   },

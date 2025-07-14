@@ -38,7 +38,6 @@ ul, ol {
 
 /* 공통 */
 h2 {
-  margin-bottom: 80px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.4;
@@ -61,11 +60,11 @@ h2.title-sm {
 .title-sub::after {
   content: "";
   position: absolute;
-  left: -16px;
+  left: -10px;
   top: 0;
   width: 1px;
   height: 24px;
-  background-color: #ddd;
+  background-color: #555;
 }
 
 .flex {
@@ -78,7 +77,7 @@ h2.title-sm {
   border-radius: 8px;
 }
 span.point-word {
-  background-color: rgba(6, 162, 224, 0.1);  /*ebf8fd*/
+  background-color: rgba(6, 162, 224, 0.12);
   color: #06A2E0;
 }
 a.point-word {
@@ -93,11 +92,4 @@ a.point-word::after {
   width: calc(100% - 28px);
   height: 1px;
   background-color: #fff;
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-    color: black;
-  }
 }

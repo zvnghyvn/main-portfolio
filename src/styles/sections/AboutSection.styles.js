@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontFamily, fontWeight, media } from '@styles/mixins';
+import { fontFamily, fontWeight, media } from '@styles/mixins'
 
 export const About = styled.section`
   padding-top: 160px;

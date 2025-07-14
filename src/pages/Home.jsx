@@ -14,7 +14,7 @@ const Home = () => {
       <main className="wd-inner">
         <About />
         <Skills />
-        {/* <Projects /> */}
+        <Projects />
         {/* <Works /> */}
         {/* <Experiences /> */}
         {/* <Education /> */}

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { bg, text, fontFamily, fontSize, fontWeight, gap, media } from '@styles/mixins';
-import { radius } from '../mixins';
+import { gap, radius, bg, text, fontFamily, fontSize, fontWeight, media } from '@styles/mixins';
 
 export const Skill = styled.section`
 	margin-top: 96px;
@@ -37,7 +36,6 @@ export const Skill = styled.section`
 				${radius('sm')}
 				${bg('grayLight')}
 				${fontSize('xs')}
-				${text('black')}
 			}
 		}
 

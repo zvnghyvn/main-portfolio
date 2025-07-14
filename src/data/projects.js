@@ -16,12 +16,12 @@ const projects = [
     media: [
       {
         type: 'image',
-        src: '/images/tick-mark.png',
+        src: '/images/img_video.jpg',
         alt: 'Spillit 메인 화면',
       },
       {
         type: 'youtube',
-        src: '/images/spillit-thumb.png',
+        src: '/images/img_video.jpg',
         alt: 'Spillit 발표 영상 / 구현 영상',
         link: 'https://youtu.be/abc123',
       },
