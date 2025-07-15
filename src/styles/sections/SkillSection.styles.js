@@ -58,7 +58,7 @@ export const Skill = styled.section`
 		}
   `}
 
-  ${media.mobile`
+	${({ theme }) => media.mobile(`
     margin-top: 80px;
 
     .skill-list {
@@ -72,7 +72,7 @@ export const Skill = styled.section`
 
 			h3 {
 				margin-bottom: 14px;
-				${fontSize('xs')}
+				font-size: ${theme.fontSize.xs};
 			}
 
 			.skill-tool {
@@ -87,5 +87,5 @@ export const Skill = styled.section`
 				font-size: 11px;
 			}
 		}
-  `}
+  `)}
 `;

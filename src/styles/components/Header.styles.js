@@ -90,7 +90,12 @@ export const HeaderNav = styled.nav`
   align-items: center;
   ${gap('lg')}
   padding: 24px 0;
-  
+  background-color: ${({ theme }) => theme.colors.white};
+
+  html.dark & {
+    background-color: ${({ theme }) => theme.colors.black};
+  }
+
   button {
     ${fontSize('lg')}
     ${text('gray')}

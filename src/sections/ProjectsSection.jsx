@@ -11,7 +11,7 @@ const ProjectsSection = () => {
     <Project id="projects">
       <h2>
         Personal Projects
-        <span className="title-sub"> Front-end</span>
+        <span className="title-sub">Front-end</span>
       </h2>
 
       {projectList.map((project) => (

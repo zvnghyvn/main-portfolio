@@ -7,7 +7,6 @@ export const Card = styled.div`
 	flex-wrap: nowrap;
   justify-content: space-between;
   padding: 80px 0;
-  border-bottom: 1px solid rgba(46, 46, 46, 0.20);
 
 	// 왼쪽 영역
 	.project-info {
@@ -102,7 +101,6 @@ export const Card = styled.div`
 		}
 
     .project-description {
-			position: relative;
 			margin-bottom: 24px;
 			${fontSize('lg')}
 			line-height: 1.8;
@@ -139,7 +137,7 @@ export const Card = styled.div`
 
 			img {
 				display: block;
-				width: 250px;
+				max-width: 250px;
 				cursor:pointer;
 			}
 
@@ -181,6 +179,92 @@ export const Card = styled.div`
 		}
   `}
 
-  ${media.mobile`
-  `}
+  ${({ theme }) => media.mobile(`
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 60px 0;
+
+		// 왼쪽 영역
+		.project-info {
+			width: 100%;
+			margin: 0 0 40px;
+
+			h3 {
+				margin: 20px 0;
+				font-size: 28px;
+			}
+
+			.project-keyword {
+				font-size: ${theme.fontSize.xs};
+			}
+
+			.project-type,
+			.project-contribution {
+				font-size: ${theme.fontSize.sm};
+			}
+
+			.project-period {
+				font-size: ${theme.fontSize.xs};
+			}
+
+			.project-btns {
+				display: flex;
+				flex-wrap: nowrap;
+				margin-top: 15px;
+				gap: 2%;
+
+				> a {
+					width: calc(50% - 1%);
+					padding: 10px 0;
+					font-size: ${theme.fontSize.sm};
+				}
+
+				.btn-detail {
+					margin: 0;
+				}
+
+				img {
+        	width: 6px;
+					vertical-align: 0px;
+				}
+			}
+		}
+
+		// 오른쪽 영역
+		.project-details {
+			width: 100%;
+
+			h4 {
+				margin: 0 0 15px;
+				font-size: ${theme.fontSize.md};
+				font-weight: ${theme.fontWeight.medium};
+			}
+
+			.project-description {
+				font-size: ${theme.fontSize.sm};
+				line-height: 1.6;
+			}
+
+			.project-features {
+				padding: 14px 20px;
+				font-size: ${theme.fontSize.xs};
+			}
+
+			.project-media {
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: ${theme.spacing.sm};
+			}
+
+			.project-tech,
+			.project-tools {
+				font-size: ${theme.fontSize.xs};
+
+				> span {
+					padding: 6px 10px;
+					white-space: nowrap;
+				}
+			}
+		}
+  `)}
 `;

@@ -18,8 +18,8 @@ export const GlobalStyle = createGlobalStyle`
     padding-top: 85px;
   }
 
-  .wd-inner {
-    width: 1312px;
+  .inner {
+    max-width: 1312px;
     margin: 0 auto;
   }
 
@@ -34,9 +34,8 @@ export const GlobalStyle = createGlobalStyle`
       padding-top: 66px;
     }
 
-    .wd-inner {
-      width: 92%;
-      margin: 0 auto;
+    .inner {
+      max-width: 92%;
     }
   `}
 `

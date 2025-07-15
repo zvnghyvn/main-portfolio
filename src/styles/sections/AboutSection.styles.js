@@ -44,7 +44,7 @@ export const About = styled.section`
     padding-top: 80px;
 
     h2 {
-			font-size: 40px;
+			font-size: 36px;
 		}
 
 		.about-intro {
