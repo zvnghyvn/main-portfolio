@@ -25,7 +25,7 @@ export const theme = {
     bold: 700,
   },
   fontFamily: {
-    ibm: `'IBM Plex Mono', monospace`,
+    ibm: `'IBM Plex Mono', sans-serif`,
     pretendard: `'Pretendard', sans-serif`,
   },
   spacing: {

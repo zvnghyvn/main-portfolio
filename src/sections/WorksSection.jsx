@@ -4,7 +4,7 @@ import BlueArrowIcon from '../assets/images/ico_arrow_b.png'
 
 const WorksSection = () => {
   return (
-    <Work id="works">
+    <Work id="work">
       <h2>
         Work Projects
         <span className="title-sub">Web Publishing</span>

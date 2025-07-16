@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { media } from '@styles/mixins'
 
 export const Project = styled.section`
-  margin-top: 160px;
+  padding-top: 160px;
 
   .project-card {
     border-bottom: 1px solid rgba(200, 200, 200, 0.2);
@@ -15,7 +15,7 @@ export const Project = styled.section`
 
   // 반응형
   ${media.mobile`
-		margin-top: 120px;
+		padding-top: 120px;
   `}
 
 `;

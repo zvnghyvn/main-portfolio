@@ -90,10 +90,11 @@ a.point-word {
   color: #fff;
 }
 a.point-word::after {
+  content: "";
   position: absolute;
   left: 14px;
   bottom: 8px;
   width: calc(100% - 28px);
-  height: 1px;
+  height: 2px;
   background-color: #fff;
 }

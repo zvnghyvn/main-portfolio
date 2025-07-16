@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { gap, radius, bg, text, fontFamily, fontSize, fontWeight, media } from '@styles/mixins';
 
 export const Skill = styled.section`
-	margin-top: 96px;
+	padding-top: 96px;
 
 	h2 { 
 		margin-bottom: 16px;
@@ -59,7 +59,7 @@ export const Skill = styled.section`
   `}
 
 	${({ theme }) => media.mobile(`
-    margin-top: 80px;
+    padding-top: 80px;
 
     .skill-list {
 			flex-wrap: wrap;

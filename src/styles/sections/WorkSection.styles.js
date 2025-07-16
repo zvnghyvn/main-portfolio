@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { gap, radius, bg, text, fontFamily, fontSize, fontWeight, media } from '@styles/mixins'
+import { bg, text, fontFamily, fontSize, fontWeight, media } from '@styles/mixins'
 
 export const Work = styled.section`
-  margin-top: 160px;
+  padding-top: 160px;
 
 	h2 {
 		margin-bottom: 80px;
@@ -88,10 +88,10 @@ export const Work = styled.section`
 	`)}
 
 	${({ theme }) => media.mobile(`
-			margin-top: 120px;
+			padding-top: 120px;
 	`)}
 	${media.mobile`
-		margin-top: 120px;
+		padding-top: 120px;
   `}
 
 `;

@@ -64,12 +64,12 @@ export const Card = styled.div`
 				transition: 0.2s ease-out;
 			}
 
-			.btn-detail {
+			.btn-process {
 				margin-bottom: 12px;
 				border-color: #06A2E0;
 				${text('point')}
 			}
-			.btn-detail:hover {
+			.btn-process:hover {
 				background-color: rgba(6, 162, 224, 0.2);
 			}
 
@@ -219,7 +219,7 @@ export const Card = styled.div`
 					font-size: ${theme.fontSize.sm};
 				}
 
-				.btn-detail {
+				.btn-process {
 					margin: 0;
 				}
 

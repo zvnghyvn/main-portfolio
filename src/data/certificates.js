@@ -25,7 +25,7 @@ const certificates = [
   },
   {
     id: "photoshopCertificate",
-    title: '(국가공인)gTQ 1급',
+    title: '(국가공인)GTQ 1급',
     issuer: '한국생산성본부',
     date: '2015.06',
   },

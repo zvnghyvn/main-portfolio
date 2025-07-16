@@ -1,9 +1,10 @@
 import educationList from "@data/educations"
+import { Education } from '@styles/sections/EducationSection.styles';
 
 const EducationSection = () => {
   return (
-    <section id="educations">
-      <h2>Education & Activities</h2>
+    <Education id="education">
+      <h2 className="title-sm">Education & Activities</h2>
 
       <ul className="education-list">
         {educationList.map((education) => (
@@ -25,7 +26,7 @@ const EducationSection = () => {
           </li>
         ))}
       </ul>
-    </section>
+    </Education>
   )
 }
 

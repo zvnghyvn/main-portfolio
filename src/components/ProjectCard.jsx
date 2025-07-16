@@ -26,7 +26,7 @@ const ProjectCard = ({ project, onImageClick }) => {
         <span className="project-period">{project.period}</span>
 
         <div className="project-btns">
-          <Link to={`/project/process/${project.id}`} className="btn-detail">
+          <Link to={`/project/process/${project.id}`} className="btn-process">
             작업 과정 보기 <img src={BlueArrowIcon} alt="arrow" />
           </Link>
           <a href={project.demoUrl} target="_blank" className="btn-demo">

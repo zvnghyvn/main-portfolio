@@ -4,19 +4,20 @@ import { fontFamily, fontWeight, media } from '@styles/mixins'
 export const About = styled.section`
   padding-top: 160px;
   text-align: center;
+	${fontFamily('pretendard')}
 
 	h2 {
 		margin-bottom: 58px;
-		${fontFamily('pretendard')}
 		font-size: 64px;
 	}
 
-	.about-intro {
+	.about-info {
 		font-size: 32px;
 	 	${fontWeight('bold')}
-		line-height: 1.5;
+		line-height: 2;
 
 		span {
+			${fontFamily('ibm')}
 			font-size: 28px;
 			line-height: 1.2;
 		}
@@ -31,7 +32,7 @@ export const About = styled.section`
 			font-size: 50px;
 		}
 
-		.about-intro {
+		.about-info {
 			font-size: 28px;
 
 			span {
@@ -47,7 +48,7 @@ export const About = styled.section`
 			font-size: 36px;
 		}
 
-		.about-intro {
+		.about-info {
 			font-size: 22px;
 
 			span {
