@@ -61,24 +61,10 @@ export const Card = styled.div`
 				${fontSize('lg')}
 				${fontWeight('bold')}
 				text-align: center;
-				transition: 0.2s ease-out;
 			}
 
-			.btn-process {
+			.btn-point {
 				margin-bottom: 12px;
-				border-color: #06A2E0;
-				${text('point')}
-			}
-			.btn-process:hover {
-				background-color: rgba(6, 162, 224, 0.2);
-			}
-
-			.btn-demo {
-				border-color: #A6A6A6;
-				${text('grayDark')}
-			}
-			.btn-demo:hover {
-				background-color: rgba(200, 200, 200, 0.2);
 			}
 
 			img {

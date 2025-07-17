@@ -26,12 +26,14 @@ const ProjectCard = ({ project, onImageClick }) => {
         <span className="project-period">{project.period}</span>
 
         <div className="project-btns">
-          <Link to={`/project/process/${project.id}`} className="btn-process">
+          <Link to={`/project/process/${project.id}`} className="btn-point">
             작업 과정 보기 <img src={BlueArrowIcon} alt="arrow" />
           </Link>
-          <a href={project.demoUrl} target="_blank" className="btn-demo">
-            데모 사이트 보기 <img src={GlayArrowIcon} alt="arrow" />
-          </a>
+          {project.demoUrl && (
+            <a href={project.demoUrl} target="_blank" className="btn-gray">
+              라이브 데모 보기 <img src={GlayArrowIcon} alt="arrow" />
+            </a>
+          )}
         </div>
       </div>
 

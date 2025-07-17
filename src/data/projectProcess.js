@@ -1,8 +1,8 @@
 const projectProcess = [
   {
     id: 'solt',
-    thumbnail: '',
-    demoUrl: 'youtube',
+    thumbnail: '/images/img_project_solt_03.png',
+    demoUrl: '',
     githubUrl: 'https://github.com/Backrow-NCP/solt-frontend',
     videoUrl: 'youtube',
     presentationUrl: 'youtube',
@@ -121,7 +121,7 @@ const projectProcess = [
     demoUrl: 'youtube',
     githubUrl: 'https://github.com/zvnghyvn/spill-it',
     videoUrl: 'youtube',
-    presentationUrl: 'youtube',
+    presentationUrl: '',
 
     overview: {
       name: 'Spill It',

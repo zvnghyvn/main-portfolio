@@ -40,7 +40,11 @@ ul, ol {
   list-style: none;
 }
 
-/* 공통 */
+.flex {
+  display: flex;
+}
+
+/* 타이틀 */
 h2 {
   font-size: 24px;
   font-weight: 700;
@@ -71,24 +75,24 @@ h2.title-sm {
   background-color: #555;
 }
 
-.flex {
-  display: flex;
-}
-
+/* 포인트 단어 */
 .point-word {
   display: inline-block;
   padding: 8px 14px;
   border-radius: 8px;
 }
+
 span.point-word {
   background-color: rgba(6, 162, 224, 0.12);
   color: #06A2E0;
 }
+
 a.point-word {
   position: relative;
   background-color: #06A2E0;
   color: #fff;
 }
+
 a.point-word::after {
   content: "";
   position: absolute;
@@ -97,4 +101,23 @@ a.point-word::after {
   width: calc(100% - 28px);
   height: 2px;
   background-color: #fff;
+}
+
+/* 버튼 */
+.btn-point {
+  border-color: #06A2E0;
+  color: #06A2E0;
+  transition: 0.2s ease-out;
+}
+.btn-point:hover {
+  background-color: rgba(6, 162, 224, 0.2);
+}
+
+.btn-gray {
+  border-color: #A6A6A6;
+  color: #A6A6A6;
+  transition: 0.2s ease-out;
+}
+.btn-gray:hover {
+  background-color: rgba(200, 200, 200, 0.2);
 }

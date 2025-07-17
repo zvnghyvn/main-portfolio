@@ -16,7 +16,7 @@ const projects = [
     media: [
       {
         type: 'image',
-        src: '/images/img_video.jpg',
+        src: '/images/img_project_solt_01.jpg',
         alt: 'Spillit 메인 화면',
       },
       {
