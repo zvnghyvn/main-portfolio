@@ -59,23 +59,23 @@ const ProjectProcess = () => {
 
           <ul>
             <li>
-              <h4>description</h4>
+              <h4>Description</h4>
               <ReactMarkdown>{project.intro.description}</ReactMarkdown>
             </li>
             <li>
-              <h4>purpose</h4>
+              <h4>Purpose</h4>
               <ReactMarkdown>{project.intro.purpose}</ReactMarkdown>
             </li>
             <li>
               <a href={project.intro.notionUrl} target="_blank" className="btn-presentation">
-                기획서·화면설계서 보기 <img src={GlayArrowIcon} alt="arrow" />
+                기획서 · 화면설계서 보러가기 <img src={BlueArrowIcon} alt="arrow" />
               </a>
             </li>
           </ul>
         </ProcessIntro>
 
         {/* 사용 기술 및 도구 */}
-        {/* <ProcessTech className="process-tech">
+        <ProcessTech className="process-tech">
           <h3>Tech Stack & Tools</h3>
 
           <table>
@@ -96,10 +96,10 @@ const ProjectProcess = () => {
               ))}
             </tbody>
           </table>
-        </ProcessTech> */}
+        </ProcessTech>
 
         {/* 주요 업무 및 구현 기능 */}
-        {/* <ProcessContribut id="contributions" className="process-contribut">
+        <ProcessContribut id="contributions" className="process-contribut">
           <h3>Project Contributions</h3>
 
           <div className="contribut-role">
@@ -113,60 +113,62 @@ const ProjectProcess = () => {
 
           <div className="contribut-function">
             <h4>Key Features</h4>
-            <ul>
+            <ul className="flex">
               {project.contribut.function.map((item, index) => (
                 <li key={index}>
-                  <strong>{item.title}:</strong> {item.content}
+                  <span>{item.title}</span> <p>{item.content}</p>
                 </li>
               ))}
             </ul>
           </div>
-        </ProcessContribut> */}
+        </ProcessContribut>
 
         {/* 트러블 슈팅 */}
-        {/* <ProcessTrouble className="process-trouble">
+        <ProcessTrouble className="process-trouble">
           <h3>Troubleshooting</h3>
 
           {project.troubleshooting.map((item, index) => (
-            <div key={index} className="trouble-item">
-              <h4>{item.title}</h4>
+            <div key={index} className="trouble-item flex">
+              <h4>{item.title.split('/n').map((line, index) => (
+                <span key={index}>{line}</span>
+              ))}</h4>
               
               <ul>
                 <li>
-                  <h5>문제 상황</h5>
+                  <h5>Problem</h5>
                   <p>{item.problem}</p>
                 </li>
                 <li>
-                  <h5>해결 방법</h5>
+                  <h5>Solution</h5>
                   <p>{item.solution}</p>
                 </li>
                 {item.code && (
                   <li>
-                    <h5>관련 코드</h5>
+                    <h5>Code</h5>
                     <pre><code>{item.code}</code></pre>
                   </li>
                 )}
                 <li>
-                  <h5>결과</h5>
+                  <h5>Result</h5>
                   <p>{item.result}</p>
                 </li>
               </ul>
             </div>
           ))}
-        </ProcessTrouble> */}
+        </ProcessTrouble>
 
         {/* 프로젝트 흐름도 */}
-        {/* <ProcessFlow className="process-flow">
+        <ProcessFlow className="process-flow">
           <h3>Project Flow</h3>
 
           {project.flow.image && (
             <img src={project.flow.image} alt="프로젝트 흐름도" />
           )}
           <p>{project.flow.description}</p>
-        </ProcessFlow> */}
+        </ProcessFlow>
 
         {/* 프로젝트 회고 */}
-        {/* <ProcessReview id="retrospective" className="process-review">
+        <ProcessReview id="retrospective" className="process-review">
           <h3>Retrospective</h3>
           
           <ul>
@@ -187,7 +189,7 @@ const ProjectProcess = () => {
               <p>{project.review.improve}</p>
             </li>
           </ul>
-        </ProcessReview> */}
+        </ProcessReview>
 
       </div>
     </Process>
