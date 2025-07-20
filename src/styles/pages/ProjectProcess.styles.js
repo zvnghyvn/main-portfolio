@@ -323,6 +323,7 @@ export const ProcessReview = styled.section`
 
 		p {
 			${fontFamily('pretendard')}
+			line-height: 1.6;
 		}
 	}
 

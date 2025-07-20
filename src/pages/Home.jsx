@@ -12,7 +12,9 @@ const Home = () => {
   // 스크롤
   useEffect(() => {
     const hash = window.location.hash;
-    if (hash) {
+    const isHome = window.location.pathname === '/';
+
+     if (isHome && hash) {
       const id = hash.replace('#', '');
       const section = document.getElementById(id);
       section?.scrollIntoView({ behavior: 'smooth' });
