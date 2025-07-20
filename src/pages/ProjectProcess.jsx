@@ -162,7 +162,9 @@ const ProjectProcess = () => {
           <h3>Project Flow</h3>
 
           {project.flow.image && (
-            <img src={project.flow.image} alt="프로젝트 흐름도" />
+            <div className="flow-thumb">
+              <img src={project.flow.image} alt="프로젝트 흐름도" />
+            </div>
           )}
           <p>{project.flow.description}</p>
         </ProcessFlow>
@@ -174,19 +176,19 @@ const ProjectProcess = () => {
           <ul>
             <li>
               <h4>잘한 점</h4>
-              <p>{project.review.good}</p>
+              <ReactMarkdown>{project.review.good}</ReactMarkdown>
             </li>
             <li>
               <h4>어려웠던 점</h4>
-              <p>{project.review.hard}</p>
+              <ReactMarkdown>{project.review.hard}</ReactMarkdown>
             </li>
             <li>
               <h4>아쉬운 점</h4>
-              <p>{project.review.regret}</p>
+              <ReactMarkdown>{project.review.regret}</ReactMarkdown>
             </li>
             <li>
               <h4>개선 방향</h4>
-              <p>{project.review.improve}</p>
+              <ReactMarkdown>{project.review.improve}</ReactMarkdown>
             </li>
           </ul>
         </ProcessReview>

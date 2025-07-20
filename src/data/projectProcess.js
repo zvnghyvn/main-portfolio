@@ -4,7 +4,7 @@ const projectProcess = [
     thumbnail: '/images/img_project_solt_03.png',
     demoUrl: '',
     githubUrl: 'https://github.com/Backrow-NCP/solt-frontend',
-    videoUrl: 'youtube',
+    videoUrl: 'https://youtu.be/mEYPb73Oo1s',
     presentationUrl: 'youtube',
 
     overview: {
@@ -112,10 +112,8 @@ const projectProcess = [
       regret: `팀장으로서 팀원들에게 더 큰 도움을 주고 싶었지만, 저 역시 모든 부분이 처음이라 **완벽하게 리드하지 못한 점**이 아쉬웠습니다.    
         또한 빠듯한 일정으로 인해 기능 구현을 다소 **급하게 마무리한 부분**이 있어 아쉬움이 남습니다.`,
       
-      improve: `
-        전체적으로 **코드 품질 개선과 리팩터링이 필요**하다고 느꼈습니다.    
-        현재는 서울 지역만 일정 생성을 지원하지만, 추후에는 **다른 지역 혹은 해외 여행지까지 확장**하여 보다 많은 사용자에게 도움이 되는 서비스로 발전시키고 싶습니다.
-      `,
+      improve: `전체적으로 **코드 품질 개선과 리팩터링이 필요**하다고 느꼈습니다.    
+        현재는 서울 지역만 일정 생성을 지원하지만, 추후에는 **다른 지역 혹은 해외 여행지까지 확장**하여 보다 많은 사용자에게 도움이 되는 서비스로 발전시키고 싶습니다.`,
     },
   },
   {

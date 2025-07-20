@@ -3,7 +3,7 @@ import { gap, radius, bg, text, fontFamily, fontSize, fontWeight, media } from '
 
 export const Process = styled.main`
   .process-card {
-    padding-top: 100px;
+    padding: 80px 0 120px;
 
     h2 {
       font-size: 32px;
@@ -11,7 +11,7 @@ export const Process = styled.main`
     }
 
 		h3 {
-			margin-bottom: 50px;
+			margin-bottom: 55px;
 			${fontSize('xl')}
 		}
 
@@ -49,10 +49,10 @@ export const ProcessBtns = styled.div`
 
 export const ProcessThumb = styled.div`
 	margin-top: 50px;
+	text-align: center;
+
 	img {
-		display: block;
 		max-width: 80%;
-		margin: 0 auto;
 	}
 `;
 
@@ -86,10 +86,6 @@ export const ProcessIntro = styled.section`
 		p {
 			${fontSize('base')}
 			line-height: 1.6;
-
-			strong {
-				${fontWeight('semibold')}
-			}
 		}
 
 		p::before {
@@ -99,12 +95,12 @@ export const ProcessIntro = styled.section`
 
 		a {
 			${fontFamily('pretendard')}
-			${fontSize('sm')}
 			${text('point')}
+			font-size: 18px;
 			transition: 0.2s;
 
 			img {
-				vertical-align: -3px;
+				vertical-align: -2px;
 				margin-left: 5px;
 			}
 		}
@@ -148,11 +144,13 @@ export const ProcessTech = styled.section`
 	}
 
 	tbody td:nth-child(2) {
+		${fontSize('sm')}
 		${fontWeight('medium')}
 	}
 
 	tbody td:nth-child(3) {
 		${fontFamily('pretendard')}
+		${fontSize('sm')}
 		${fontWeight('regular')}
 		text-align: left;
 	}
@@ -257,6 +255,7 @@ export const ProcessTrouble = styled.section`
 				}
 
 				p {
+					${fontFamily('pretendard')}
 					${fontSize('md')}
 				}
 
@@ -276,13 +275,58 @@ export const ProcessTrouble = styled.section`
 
 			li:last-child {
 				margin: 0;
+
+				p {
+					${fontWeight('bold')}
+				}
 			}
 		}
 	}
 `;
 
 export const ProcessFlow = styled.section`
+	.flow-thumb {
+		margin-bottom: 14px;
+		text-align: center;
+	
+		img {
+			max-width: 80%;
+		}
+	}
+
+	p {
+		${fontSize('sm')}
+		${text('grayDark')}
+		text-align: center;
+	}
 `;
 
 export const ProcessReview = styled.section`
+	h3 {
+		${text('point')}
+	}
+
+	li {
+		margin-bottom: 30px;
+
+		h4 {
+			margin-bottom: 14px;
+			${fontSize('sm')}
+			${fontWeight('regular')}
+			${text('grayDark')}
+		}
+
+		h4::before {
+			content: "•";
+			margin-right: 8px;
+		}
+
+		p {
+			${fontFamily('pretendard')}
+		}
+	}
+
+	li:last-child {
+		margin: 0;
+	}
 `;
