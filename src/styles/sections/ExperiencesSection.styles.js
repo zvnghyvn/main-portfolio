@@ -84,11 +84,98 @@ export const Experience = styled.section`
   }
 
   // 반응형
-  ${({ theme }) => media.mobile(`
+  ${({ theme }) => media.tablet(`
+    .experiences-list {
+      gap: 20px;
 
+      > li {
+        padding: 20px;
+      }
+
+      // 상단 영역
+      .experience-info {
+        margin-bottom: 20px;
+        padding: 5px 16px;
+
+        h3 {
+          font-size: ${theme.fontSize.lg}
+        }
+
+        .flex-left {
+          > span {
+            font-size: ${theme.fontSize.sm}
+          }
+        }
+
+      .flex-right {
+        gap: 20px;
+
+        .experience-period {
+          font-size: ${theme.fontSize.sm}
+        }
+
+        .experience-total-period {
+          padding: 6px 12px;
+          font-size: ${theme.fontSize.xs}
+        }
+      }
+    }
+
+    // 하단 영역
+    .experience-features {
+      padding: 20px;
+      font-size: ${theme.fontSize.sm}
+    }
 	`)}
 
 	${({ theme }) => media.mobile(`
-			padding-top: 120px;
+			padding-top: 130px;
+
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      .experiences-list {
+        > li {
+          padding: 16px;
+        }
+
+        // 상단 영역
+        .experience-info {
+          margin-bottom: 10px;
+          padding: 5px 0;
+
+          h3 {
+            font-size: ${theme.fontSize.base}
+          }
+
+          .flex-left {
+            gap: ${theme.spacing.md}
+
+            > span {
+              font-size: ${theme.fontSize.xs}
+            }
+
+            .experience-company {
+              display: none;
+            }
+
+            .experience-team {
+              color: ${theme.colors.grayDark}
+            }
+          }
+
+        .flex-right {
+          .experience-period {
+            display: none;
+          }
+        }
+      }
+
+      // 하단 영역
+      .experience-features {
+        padding: 14px 20px;
+        font-size: ${theme.fontSize.xs}
+      }
 	`)}
 `;

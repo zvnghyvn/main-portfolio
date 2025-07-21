@@ -58,11 +58,66 @@ export const Education = styled.section`
 	}
 
   // 반응형
-  ${({ theme }) => media.mobile(`
+  ${({ theme }) => media.tablet(`
+		.education-list {
+			// 왼쪽 영역
+			.education-info {
+				width: 240px;
 
+			h4 {
+				font-size: ${theme.fontSize.lg}
+			}
+
+			.education-period {
+				font-size: ${theme.fontSize.sm}
+			}
+		}
+
+		// 오른쪽 영역
+		.education-features {
+			width: calc(100% - 240px);
+			${fontSize('sm')}
+		}
 	`)}
 
 	${({ theme }) => media.mobile(`
-			
+		.education-list {
+			> li {
+				flex-wrap: wrap;
+				margin-bottom: 20px;
+				padding: 16px;
+			}
+
+			// 왼쪽 영역
+			.education-info {
+				position: relative;
+				width: 100%;
+        padding: 5px 0 15px;
+
+				h4 {
+					margin-bottom: 0;
+					font-size: ${theme.fontSize.base}
+				}
+
+				.education-period {
+					position: absolute;
+					top: 5px;
+					right: 17px;
+					font-size: ${theme.fontSize.xs}
+				}
+			}
+
+			// 오른쪽 영역
+			.education-features {
+				width: 100%;
+				padding: 14px 20px;
+				font-size: ${theme.fontSize.xs}
+
+				> li:nth-child(3),
+				> li:nth-child(4) {
+					display: none;
+				}
+			}
+		}
 	`)}
 `;

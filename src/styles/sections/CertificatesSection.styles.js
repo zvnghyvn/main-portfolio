@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { gap, radius, text, fontFamily, fontSize, media } from '@styles/mixins'
+import { gap, radius, text, fontFamily, fontSize, fontWeight, media } from '@styles/mixins'
 
 export const Certificates = styled.section`
   padding-top: 80px;
@@ -34,15 +34,60 @@ export const Certificates = styled.section`
 		.certificate-date {
 			margin-left: auto;
 			${text('point')}
+
+			b {
+				${fontWeight('regular')}
+			}
 		}
 	}
 
 	// 반응형
-  ${({ theme }) => media.mobile(`
+  ${({ theme }) => media.tablet(`
+			.certificate-list {
+				> li {
+					margin-bottom: 24px;
+					padding: 24px;
+				}
 
+				span {
+					font-size: ${theme.fontSize.sm}
+				}
+
+				.certificate-title {
+					font-size: 18px;
+				}
+
+				.certificate-issuer {
+					color: ${theme.colors.grayDark}
+				}
+			}
 	`)}
 
 	${({ theme }) => media.mobile(`
-			
+		.certificate-list {
+			> li {
+				gap: ${theme.spacing.base}
+				margin-bottom: 20px;
+				padding: 16px;
+			}
+
+			span {
+				font-size: ${theme.fontSize.xs}
+			}
+
+			.certificate-title {
+				font-size: 16px;
+			}
+
+			.certificate-issuer {
+				display: none;
+			}
+
+			.certificate-date {
+				b {
+					display: none;
+				}
+			}
+		}
 	`)}
 `;

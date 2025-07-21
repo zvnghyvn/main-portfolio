@@ -45,7 +45,7 @@ export const Work = styled.section`
 			}
 				
 			img {
-				max-width: 100%;
+				width: 100%;
 			}
 		}
 
@@ -83,15 +83,67 @@ export const Work = styled.section`
 
 
   // 반응형
-  ${({ theme }) => media.mobile(`
+  ${({ theme }) => media.tablet(`
+		.work-list {
+			flex-wrap: wrap;
+			gap: 60px 30px;
 
+			li {
+				width: calc((100% - 30px) / 2);
+			}
+
+			.work-title {
+				h3 {
+					font-size: 26px;
+				}
+			}
+
+			.work-info {
+				margin-bottom: 20px;
+			}
+
+			.work-description {
+				font-size: ${theme.fontSize.md}
+			}
+		}
 	`)}
 
 	${({ theme }) => media.mobile(`
-			padding-top: 120px;
+		padding-top: 130px;
+
+		h2 {
+			margin-bottom: 50px;
+		}
+
+		.work-list {
+			gap: 50px 30px;
+
+			.work-title {
+				margin-bottom: 14px; 
+
+				h3 {
+					font-size: ${theme.fontSize.xl}
+				}
+
+				a {
+					font-size: 0;
+
+					img {
+						vertical-align: 0;
+						margin-left: 0;
+					}
+				}
+			}
+
+			.work-info {
+				display: none;
+			}
+
+			.work-description {
+				font-size: ${theme.fontSize.xs}
+				color: ${theme.colors.grayDark}
+			}
+		}
 	`)}
-	${media.mobile`
-		padding-top: 120px;
-  `}
 
 `;

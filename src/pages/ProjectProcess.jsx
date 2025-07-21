@@ -27,9 +27,11 @@ const ProjectProcess = () => {
           <a href={project.githubUrl} target="_blank" className="btn-point">
             깃허브 <img src={BlueArrowIcon} alt="arrow" />
           </a>
-          <a href={project.videoUrl} target="_blank" className="btn-gray">
-            시안 영상 <img src={GlayArrowIcon} alt="arrow" />
-          </a>
+          {project.videoUrl && (
+            <a href={project.videoUrl} target="_blank" className="btn-gray">
+              시안 영상 <img src={GlayArrowIcon} alt="arrow" />
+            </a>
+          )}
           {project.presentationUrl && (
             <a href={project.presentationUrl} target="_blank" className="btn-gray">
               발표 영상 <img src={GlayArrowIcon} alt="arrow" />

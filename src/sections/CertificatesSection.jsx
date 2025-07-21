@@ -13,7 +13,7 @@ const CertificatesSection = () => {
             <img src={CertificateIcon} alt="메달 아이콘" />
             <strong className="certificate-title">{certificate.title}</strong>
             <span className="certificate-issuer">{certificate.issuer}</span>
-            <span className="certificate-date">취득일: {certificate.date}</span>
+            <span className="certificate-date"><b>취득일: </b>{certificate.date}</span>
           </li>
         ))}
       </ul>

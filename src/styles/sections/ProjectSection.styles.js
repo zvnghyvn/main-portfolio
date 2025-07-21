@@ -15,7 +15,7 @@ export const Project = styled.section`
 
   // 반응형
   ${media.mobile`
-		padding-top: 120px;
+		padding-top: 130px;
   `}
 
 `;

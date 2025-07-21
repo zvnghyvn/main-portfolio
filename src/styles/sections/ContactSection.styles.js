@@ -24,11 +24,34 @@ export const Contact = styled.section`
 	}
 
 	// 반응형
-  ${({ theme }) => media.mobile(`
+ ${media.tablet`
+		h2 {
+			margin-bottom: 40px;
+			font-size: 38px;
+		}
 
-	`)}
+		.contact-info {
+			font-size: 24px;
 
-	${({ theme }) => media.mobile(`
-			
-	`)}
+			span, a {
+				font-size: 20px;
+			}
+		}
+  `}
+
+	${media.mobile`
+    padding-top: 130px 0;
+
+		h2 {
+			font-size: 32px;
+		}
+
+		.contact-info {
+			font-size: 18px;
+
+			span, a {
+				font-size: 14px;
+			}
+		}
+	`}
 `;

@@ -38,4 +38,10 @@ export const GlobalStyle = createGlobalStyle`
       max-width: 92%;
     }
   `}
+
+  ${media.mobile`
+    .title-sub {
+      display: none;
+    }
+  `}
 `
