@@ -66,11 +66,13 @@ const ProjectProcess = () => {
               <h4>Purpose</h4>
               <ReactMarkdown>{project.intro.purpose}</ReactMarkdown>
             </li>
-            <li>
-              <a href={project.intro.notionUrl} target="_blank" className="btn-presentation">
-                기획서 · 화면설계서 보러가기 <img src={BlueArrowIcon} alt="arrow" />
-              </a>
-            </li>
+            {project.intro.notionUrl && (
+              <li>
+                <a href={project.intro.notionUrl} target="_blank" className="btn-presentation">
+                  기획서 · 화면설계서 보러가기 <img src={BlueArrowIcon} alt="arrow" />
+                </a>
+              </li>
+            )}
           </ul>
         </ProcessIntro>
 

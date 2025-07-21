@@ -56,6 +56,24 @@ const projects = [
     tools: ['Github', 'Figma', 'Notion'],
     demoUrl: 'https://spill-it.vercel.app',
   },
+  {
+    id: 'portfolio',
+    title: 'Main Portfolio',
+    keyword: '포트폴리오 사이트',
+    period: '2025.06 - 2025.07',
+    type: '개인 프로젝트',
+    contribution: '기여도 100%',
+    description: `메인 포트폴리오 사이트는 프론트엔드 개발자로서의 역량을 소개하기 위해 제작한 **자기소개용 웹 페이지**입니다.  
+프로젝트, 기술 스택, 이력 등을 구조적으로 정리하여 한눈에 확인할 수 있도록 구성했습니다.`,
+    features: [
+      '데이터 파일(.js) 기반의 반복 렌더링으로 유지보수성과 확장성 강화',
+      'styled-components를 활용한 다크모드 대응 준비와 컴포넌트 스타일 일원화',
+      'react-router를 이용한 페이지 전환 및 Smooth Scroll 구현',
+    ],
+    media: [],
+    techStack: ['React', 'JavaScript', 'styled-components', 'Vite'],
+    tools: ['Github', 'Figma', 'Notion'],
+  },
 ]
 
 export default projects

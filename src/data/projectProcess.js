@@ -2,10 +2,10 @@ const projectProcess = [
   {
     id: 'solt',
     thumbnail: '/images/img_project_solt_03.png',
-    demoUrl: '',
+    demoUrl: 'url',
     githubUrl: 'https://github.com/Backrow-NCP/solt-frontend',
-    videoUrl: 'https://youtu.be/mEYPb73Oo1s',
-    presentationUrl: 'youtube',
+    videoUrl: 'https://youtu.be/hV_wbE9IeQ0',
+    presentationUrl: 'https://youtu.be/mEYPb73Oo1s',
 
     overview: {
       name: 'Solt',
@@ -98,7 +98,7 @@ const projectProcess = [
 
     flow: {
       description: '여행 정보 선택 → AI 플랜 생성 및 로딩 → 추천 일정 확인 → 일정 수정 및 재추천 → 플랜 PDF 저장 및 마이페이지에 저장',
-      image: '',
+      image: '/images/img_flow_solt.jpg',
     },
 
     review: {
@@ -119,9 +119,9 @@ const projectProcess = [
   {
     id: 'spillIt',
     thumbnail: '',
-    demoUrl: 'youtube',
+    demoUrl: 'url',
     githubUrl: 'https://github.com/zvnghyvn/spill-it',
-    videoUrl: 'youtube',
+    videoUrl: 'https://youtu.be/SnWadl0xnlg',
     presentationUrl: '',
 
     overview: {
@@ -204,8 +204,8 @@ const projectProcess = [
     ],
 
     flow: {
-      description: '텍스트·이미지 입력 → 감정 선택 → (선택 시) 배경 설정 → 로컬 저장 또는 취소 → 리스트에 실시간 반영 → 감정 필터·정렬 가능 → 삭제 시 즉시 반영',
-      image: '',
+      description: '기록 입력 → 로컬 저장 → 리스트 실시간 반영 (감정 필터·정렬 가능) → 삭제 시 로컬 삭제 및 리스트 실시간 반영',
+      image: '/images/img_flow_spillit.jpg',
     },
 
     review: {
@@ -227,63 +227,111 @@ const projectProcess = [
     },
   },
   {
-    id: '',
+    id: 'portfolio',
     thumbnail: '',
-    demoUrl: 'youtube',
-    githubUrl: 'https://github.com/zvnghyvn/spill-it',
-    videoUrl: 'youtube',
-    presentationUrl: 'youtube',
+    demoUrl: 'url',
+    githubUrl: 'https://github.com/zvnghyvn/portfolio-site',
+    videoUrl: '',
+    presentationUrl: '',
 
     overview: {
-      name: '',
-      period: '',
-      members: '',
-      role: '',
+      name: 'Main Portfolio',
+      period: '2025.06 - 2025.07',
+      members: '개인 프로젝트',
+      role: '기여도 100%',
     },
 
     intro: {
-      description: ``,
-      purpose: ``,
+      description: `이 사이트는 프론트엔드 개발자로서의 역량을 보여주기 위해 제작한 **자기소개용 포트폴리오 웹사이트**입니다.  
+      프로젝트, 기술 스택, 경험, 이력 등을 구조화된 섹션으로 나누어 한눈에 보기 쉽게 정리했습니다.`,
+      purpose: `채용 담당자님에게 저의 기술 역량과 개발 경험을 명확하게 전달하기 위해 제작했습니다.  
+      빠른 초기 개발은 JavaScript로, 이후 점진적인 TypeScript 리팩터링을 목표로 하여 실전 개발 흐름에 맞춰 구성했습니다.`,
       notionUrl: '',
     },
 
     techStack: [
-      { category: 'Frontend', tech: [], reason: '' },
-      { category: 'Styling', tech: [], reason: '' },
-      { category: 'Etc', tech: [], reason: '' },
-      { category: 'Collabor', tech: [], reason: '' },
+      {
+        category: 'Frontend',
+        tech: ['React', 'JavaScript'],
+        reason: '빠르게 초기 MVP를 구축하기 위해 JavaScript로 먼저 개발하고, 이후 TypeScript 기반으로 리팩터링 예정입니다. React의 컴포넌트 기반 구조로 각 섹션을 독립적으로 관리할 수 있도록 구성했습니다.',
+      },
+      {
+        category: 'Styling',
+        tech: ['styled-components'],
+        reason: '컴포넌트 기반 스타일링을 위해 styled-components를 사용했습니다. 스타일 일관성을 유지하면서 다크모드 대응과 재사용성을 고려해 설계했습니다.',
+      },
+      {
+        category: 'Build & Tools',
+        tech: ['Vite', 'Prettier'],
+        reason: '빠른 번들링과 개발 편의성을 위해 Vite를 선택했으며, Prettier 설정을 통해 코드 가독성과 팀 개발 대비 코드 일관성을 확보했습니다.',
+      },
+      {
+        category: 'Routing',
+        tech: ['react-router-dom'],
+        reason: '`/`, `/project/process`로 라우팅을 구성하여, 페이지별 콘텐츠 분리와 사용자 흐름 제어를 용이하게 했습니다.',
+      },
     ],
 
     contribut: {
-      role: [],
+      role: [
+        '프론트엔드 개인 프로젝트로, 기획부터 개발, 배포까지 전 과정을 직접 수행',
+        '반복 요소 분리를 통한 컴포넌트화 및 라우팅 설계',
+        '리팩터링 전환을 고려한 JavaScript 기반 구조 설계',
+      ],
       function: [
         {
-          title: '',
-          content: '',
+          title: '데이터 파일 분리',
+          content: 'skills.js, projects.js 등 반복 콘텐츠를 위한 데이터 파일을 구성해 관리 효율성을 높였습니다.',
+        },
+        {
+          title: 'styled-components 사용',
+          content: '컴포넌트별 스타일을 캡슐화하여 스타일 충돌을 방지하고 다크모드 확장 가능성을 고려해 설계했습니다.',
+        },
+        {
+          title: '라우팅 구성',
+          content: 'react-router-dom을 활용해 각 페이지를 명확하게 분리하고, Smooth Scroll 기능으로 UX를 개선했습니다.',
         },
       ],
     },
 
     troubleshooting: [
       {
-        title: '',
-        problem: ``,
-        solution: ``,
-        code: ``,
-        result: '',
+        title: '시멘틱 HTML 구조 설계의 /n고민과 해결',
+        problem: `초기 레이아웃 구성 시, <Header>와 <main> 태그의 위치를 어디에 둘지 고민이 있었습니다.  
+        처음에는 App.jsx 내부에 모두 넣는 것이 구조상 깔끔해 보였고, <main>도 함께 넣는 방향으로 고려하고 있었습니다.`,
+        solution: `<main> 태그는 각 페이지의 고유한 주요 콘텐츠를 나타내는 시멘틱 태그라는 점을 다시 확인했습니다.  
+        접근성과 웹 표준을 고려하여, <Header>는 App.jsx에 공통 배치하고, <main>은 각 페이지 컴포넌트(Home.jsx, ProjectPlan.jsx 등)에 개별 배치하는 것으로 구조를 조정했습니다.`,
+        code: `
+          // App.jsx
+          <Header />
+          <Outlet />  // 각 페이지에서 main을 포함
+
+          // Home.jsx
+          <main>
+            <About />
+            <Skills />
+            // ...섹션들
+          </main>`,
+        result: '스크린 리더 사용자에게 각 페이지의 주요 콘텐츠를 명확하게 인식시킬 수 있고, SEO에도 유리한 구조로 개선되었습니다. 웹 표준을 실제로 구현하며 접근성에 대한 이해를 높일 수 있었습니다.',
       },
     ],
 
     flow: {
-      description: '',
-      image: '',
+      description: '메인 페이지 (‘Nav’ 클릭 시 각 섹션으로 스크롤 이동 가능) → Project의 ‘작업 과정 보기’ 버튼 클릭 시 해당 페이지로 이동 → ‘Home’ 버튼 클릭 시 메인 페이지 #Project로 복귀',
+      image: '/images/img_flow_main.jpg',
     },
 
     review: {
-      good: ``,
-      hard: ``,
-      regret: ``,
-      improve: ``,
+      good: `프로젝트 구조를 설계할 때 섹션별 컴포넌트를 명확히 나누고, 반복되는 콘텐츠는 데이터 파일로 분리해 **유지보수성과 확장성**을 확보할 수 있었습니다.  
+      라우팅과 스크롤 흐름도 자연스럽게 연결되도록 구성한 점이 만족스러웠습니다.`,
+
+      hard: `**TypeScript로 변경 작업**을 하면서 props 타입 정의, useState의 제네릭 등 새로운 문법을 이해하는 데 시간이 걸렸습니다.  
+      하지만 컴파일 타임에 오류를 사전에 확인할 수 있어 안정성이 높아졌고, 구조적인 코딩 습관을 익히는 데 많은 도움이 되었습니다.`,
+
+      regret: `스타일링에서 최대한 중복을 줄이기 위해 theme과 mixins를 사용했지만, 여전히 더 간결하게 만들 수 있을 것 같다는 고민이 남았습니다.  
+      styled-components를 실무에서는 어떻게 구조화하는지에 대한 정보가 부족하여 **지금 방식이 최선인지 확신이 들지 않는다는 점**이 아쉽습니다.`,
+
+      improve: `추후 애니메이션과 전환 효과를 추가하여 더 완성도 있는 사용자 경험을 만들고, 방문자 흐름을 파악할 수 있는 간단한 로깅 기능도 도입해볼 예정입니다.`,
     },
   },
   {
