@@ -103,7 +103,7 @@ export const Work = styled.section`
 			}
 
 			.work-description {
-				font-size: ${theme.fontSize.md}
+				font-size: ${theme.fontSize.md};
 			}
 		}
 	`)}
@@ -122,7 +122,7 @@ export const Work = styled.section`
 				margin-bottom: 14px; 
 
 				h3 {
-					font-size: ${theme.fontSize.xl}
+					font-size: ${theme.fontSize.xl};
 				}
 
 				a {
@@ -140,8 +140,8 @@ export const Work = styled.section`
 			}
 
 			.work-description {
-				font-size: ${theme.fontSize.xs}
-				color: ${theme.colors.grayDark}
+				font-size: ${theme.fontSize.xs};
+				color: ${theme.colors.grayDark};
 			}
 		}
 	`)}

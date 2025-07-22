@@ -50,7 +50,7 @@ export const Certificates = styled.section`
 				}
 
 				span {
-					font-size: ${theme.fontSize.sm}
+					font-size: ${theme.fontSize.sm};
 				}
 
 				.certificate-title {
@@ -58,7 +58,7 @@ export const Certificates = styled.section`
 				}
 
 				.certificate-issuer {
-					color: ${theme.colors.grayDark}
+					color: ${theme.colors.grayDark};
 				}
 			}
 	`)}
@@ -66,13 +66,13 @@ export const Certificates = styled.section`
 	${({ theme }) => media.mobile(`
 		.certificate-list {
 			> li {
-				gap: ${theme.spacing.base}
+				gap: ${theme.spacing.base};
 				margin-bottom: 20px;
 				padding: 16px;
 			}
 
 			span {
-				font-size: ${theme.fontSize.xs}
+				font-size: ${theme.fontSize.xs};
 			}
 
 			.certificate-title {

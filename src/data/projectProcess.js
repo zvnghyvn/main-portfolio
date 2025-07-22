@@ -118,7 +118,7 @@ const projectProcess = [
   },
   {
     id: 'spillIt',
-    thumbnail: '',
+    thumbnail: '/images/img_project_spillit_02.png',
     demoUrl: 'url',
     githubUrl: 'https://github.com/zvnghyvn/spill-it',
     videoUrl: 'https://youtu.be/SnWadl0xnlg',
@@ -228,7 +228,7 @@ const projectProcess = [
   },
   {
     id: 'portfolio',
-    thumbnail: '',
+    thumbnail: '/images/img_project_main_03.png',
     demoUrl: 'url',
     githubUrl: 'https://github.com/zvnghyvn/portfolio-site',
     videoUrl: '',

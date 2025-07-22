@@ -121,11 +121,11 @@ export const Card = styled.div`
 
 			img {
 				display: block;
-				max-width: 250px;
+				max-height: 118px;
 				cursor:pointer;
 			}
 
-			a {
+			> a {
 				display: block;
 			}
 		}
@@ -179,16 +179,16 @@ export const Card = styled.div`
 			}
 
 			.project-keyword {
-				font-size: ${theme.fontSize.xs}
+				font-size: ${theme.fontSize.xs};
 			}
 
 			.project-type,
 			.project-contribution {
-				font-size: ${theme.fontSize.sm}
+				font-size: ${theme.fontSize.sm};
 			}
 
 			.project-period {
-				font-size: ${theme.fontSize.xs}
+				font-size: ${theme.fontSize.xs};
 			}
 
 			.project-btns {
@@ -200,7 +200,7 @@ export const Card = styled.div`
 				> a {
 					width: calc(50% - 1%);
 					padding: 10px 0;
-					font-size: ${theme.fontSize.sm}
+					font-size: ${theme.fontSize.sm};
 				}
 
 				.btn-point  {
@@ -220,29 +220,33 @@ export const Card = styled.div`
 
 			h4 {
 				margin: 0 0 15px;
-				font-size: ${theme.fontSize.md}
-				font-weight: ${theme.fontWeight.medium}
+				font-size: ${theme.fontSize.md};
+				font-weight: ${theme.fontWeight.medium};
 			}
 
 			.project-description {
-				font-size: ${theme.fontSize.sm}
+				font-size: ${theme.fontSize.sm};
 				line-height: 1.6;
 			}
 
 			.project-features {
 				padding: 14px 20px;
-				font-size: ${theme.fontSize.xs}
+				font-size: ${theme.fontSize.xs};
 			}
 
 			.project-media {
-				flex-wrap: wrap;
+				flex-wrap: nowrap;
 				justify-content: center;
-				gap: ${theme.spacing.sm}
-			}
+				gap: ${theme.spacing.xs};
 
+				> a {
+					display: none;
+				}
+			}
+			
 			.project-tech,
 			.project-tools {
-				font-size: ${theme.fontSize.xs}
+				font-size: ${theme.fontSize.xs};
 
 				> span {
 					padding: 6px 10px;

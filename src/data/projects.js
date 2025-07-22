@@ -18,18 +18,23 @@ const projects = [
       {
         type: 'image',
         src: '/images/img_project_solt_01.jpg',
-        alt: 'Spillit 메인 화면',
+        alt: 'Solt 메인 화면',
+      },
+      {
+        type: 'image',
+        src: '/images/img_project_solt_02.jpg',
+        alt: 'Solt 플랜 생성 페이지',
       },
       {
         type: 'youtube',
-        src: '/images/img_video.jpg',
-        alt: 'Spillit 시연 영상',
-        link: 'https://youtu.be/abc123',
+        src: '/images/img_video_solt_01.jpg',
+        alt: 'Solt 시연 영상',
+        link: 'https://youtu.be/hV_wbE9IeQ0',
       },
       {
         type: 'youtube',
         src: '/images/img_video_solt_02.jpg',
-        alt: 'Spillit 발표 영상',
+        alt: 'Solt 발표 영상',
         link: 'https://youtu.be/mEYPb73Oo1s',
       },
     ],
@@ -51,7 +56,19 @@ const projects = [
       '기분별 필터링 및 정렬 기능을 통한 데이터 관리 최적화',
       '사용자 인터랙션에 반응하는 UI/UX 및 마이크로 애니메이션 구현',
     ],
-    media: [],
+    media: [
+      {
+        type: 'image',
+        src: '/images/img_project_spillit_01.jpg',
+        alt: 'Spill it 메인 화면',
+      },
+      {
+        type: 'youtube',
+        src: '/images/img_video_spillit_01.jpg',
+        alt: 'Spill it 시연 영상',
+        link: 'https://youtu.be/SnWadl0xnlg',
+      },
+    ],
     techStack: ['React', 'TypeScript', 'SCSS', 'Vite', 'IndexedDB'],
     tools: ['Github', 'Figma', 'Notion'],
     demoUrl: 'https://spill-it.vercel.app',
@@ -73,6 +90,7 @@ const projects = [
     media: [],
     techStack: ['React', 'JavaScript', 'styled-components', 'Vite'],
     tools: ['Github', 'Figma', 'Notion'],
+    demoUrl: '',
   },
 ]
 

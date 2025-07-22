@@ -72,7 +72,7 @@ export const Skill = styled.section`
 
 			h3 {
 				margin-bottom: 14px;
-				font-size: ${theme.fontSize.xs}
+				font-size: ${theme.fontSize.xs};
 			}
 
 			.skill-tool {

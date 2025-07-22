@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { gap, radius, bg, text, fontFamily, fontSize, fontWeight, media } from '@styles/mixins';
+import { gap, media } from '@styles/mixins';
 
 export const Backdrop = styled.div`
   z-index: 100;
@@ -11,28 +11,48 @@ export const Backdrop = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
+  cursor:pointer;
 `
 
 export const Content = styled.div`
-  position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  align-items: flex-start;
+  ${gap('base')}
 
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-		${radius('base')}
+  > div {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 50vw;
+    max-height: 60vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    cursor: auto;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
   }
-`
 
-export const CloseButton = styled.button`
-  z-index: 101;
-  position: absolute;
-  top: -30px;
-  right: -30px;
-	${bg('black')}
-	${fontSize('xl')}
-	${text('white')}
+  > button {
+    transform: translateY(-20px);
+
+    img {
+      width: 32px;
+    }
+  }
+  
+  ${media.mobile`
+    gap: 0;
+
+    > div {
+      max-width: 85vw;
+    }
+
+    > button {
+      transform: translateY(-28px);
+
+      img {
+        width: 28px;
+      }
+    }
+  `}
 `

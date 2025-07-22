@@ -98,12 +98,12 @@ export const Experience = styled.section`
         padding: 5px 16px;
 
         h3 {
-          font-size: ${theme.fontSize.lg}
+          font-size: ${theme.fontSize.lg};
         }
 
         .flex-left {
           > span {
-            font-size: ${theme.fontSize.sm}
+            font-size: ${theme.fontSize.sm};
           }
         }
 
@@ -111,12 +111,12 @@ export const Experience = styled.section`
         gap: 20px;
 
         .experience-period {
-          font-size: ${theme.fontSize.sm}
+          font-size: ${theme.fontSize.sm};
         }
 
         .experience-total-period {
           padding: 6px 12px;
-          font-size: ${theme.fontSize.xs}
+          font-size: ${theme.fontSize.xs};
         }
       }
     }
@@ -124,7 +124,7 @@ export const Experience = styled.section`
     // 하단 영역
     .experience-features {
       padding: 20px;
-      font-size: ${theme.fontSize.sm}
+      font-size: ${theme.fontSize.sm};
     }
 	`)}
 
@@ -146,14 +146,14 @@ export const Experience = styled.section`
           padding: 5px 0;
 
           h3 {
-            font-size: ${theme.fontSize.base}
+            font-size: ${theme.fontSize.base};
           }
 
           .flex-left {
-            gap: ${theme.spacing.md}
+            gap: ${theme.spacing.md};
 
             > span {
-              font-size: ${theme.fontSize.xs}
+              font-size: ${theme.fontSize.xs};
             }
 
             .experience-company {
@@ -161,7 +161,7 @@ export const Experience = styled.section`
             }
 
             .experience-team {
-              color: ${theme.colors.grayDark}
+              color: ${theme.colors.grayDark};
             }
           }
 
@@ -175,7 +175,7 @@ export const Experience = styled.section`
       // 하단 영역
       .experience-features {
         padding: 14px 20px;
-        font-size: ${theme.fontSize.xs}
+        font-size: ${theme.fontSize.xs};
       }
 	`)}
 `;

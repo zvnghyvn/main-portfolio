@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { gap, bg, text, fontSize, fontWeight, media } from '@styles/mixins';
-/* wrapper */
+
 export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
@@ -65,11 +65,11 @@ export const HeaderMain = styled.div`
     padding: 16px 20px;
 
     .header-intro {
-      font-size: ${theme.fontSize.sm}
+      font-size: ${theme.fontSize.sm};
     }
 
     .header-contact {
-      font-size: ${theme.fontSize.xs}
+      font-size: ${theme.fontSize.xs};
     }
   `)}
 
@@ -90,10 +90,10 @@ export const HeaderNav = styled.nav`
   align-items: center;
   ${gap('lg')}
   padding: 24px 0;
-  background-color: ${({ theme }) => theme.colors.white}
+  ${bg('white')}
 
   html.dark & {
-    background-color: ${({ theme }) => theme.colors.black}
+  ${bg('black')}
   }
 
   button {
@@ -107,7 +107,7 @@ export const HeaderNav = styled.nav`
     padding: 20px 0;
 
     button {
-      font-size: ${theme.fontSize.md}
+      font-size: ${theme.fontSize.md};
     }
     
     img {

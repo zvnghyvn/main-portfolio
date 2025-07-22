@@ -65,18 +65,18 @@ export const Education = styled.section`
 				width: 240px;
 
 			h4 {
-				font-size: ${theme.fontSize.lg}
+				font-size: ${theme.fontSize.lg};
 			}
 
 			.education-period {
-				font-size: ${theme.fontSize.sm}
+				font-size: ${theme.fontSize.sm};
 			}
 		}
 
 		// 오른쪽 영역
 		.education-features {
 			width: calc(100% - 240px);
-			${fontSize('sm')}
+			font-size: ${theme.fontSize.sm};
 		}
 	`)}
 
@@ -96,14 +96,14 @@ export const Education = styled.section`
 
 				h4 {
 					margin-bottom: 0;
-					font-size: ${theme.fontSize.base}
+					font-size: ${theme.fontSize.base};
 				}
 
 				.education-period {
 					position: absolute;
 					top: 5px;
 					right: 17px;
-					font-size: ${theme.fontSize.xs}
+					font-size: ${theme.fontSize.xs};
 				}
 			}
 
@@ -111,7 +111,7 @@ export const Education = styled.section`
 			.education-features {
 				width: 100%;
 				padding: 14px 20px;
-				font-size: ${theme.fontSize.xs}
+				font-size: ${theme.fontSize.xs};
 
 				> li:nth-child(3),
 				> li:nth-child(4) {
