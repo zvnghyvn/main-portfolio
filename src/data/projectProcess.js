@@ -230,7 +230,7 @@ const projectProcess = [
     id: 'portfolio',
     thumbnail: '/images/img_project_main_03.png',
     demoUrl: 'url',
-    githubUrl: 'https://github.com/zvnghyvn/portfolio-site',
+    githubUrl: 'https://github.com/zvnghyvn/main-portfolio',
     videoUrl: '',
     presentationUrl: '',
 
@@ -334,18 +334,18 @@ const projectProcess = [
     },
   },
   {
-    id: '',
+    id: 'designer',
     thumbnail: '',
     demoUrl: 'youtube',
-    githubUrl: 'https://github.com/zvnghyvn/spill-it',
+    githubUrl: 'https://github.com/zvnghyvn/designer-portfolio',
     videoUrl: 'youtube',
-    presentationUrl: 'youtube',
+    presentationUrl: '',
 
     overview: {
-      name: '',
-      period: '',
-      members: '',
-      role: '',
+      name: 'Designer Portfolio',
+      period: '2025.07 - 2025.08',
+      members: '2인 팀 프로젝트',
+      role: '프론트엔드 중 기여도 100%',
     },
 
     intro: {
