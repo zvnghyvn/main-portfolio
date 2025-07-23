@@ -45,6 +45,18 @@ export const ProcessBtns = styled.div`
 			vertical-align: -1px;
 		}
 	}
+
+	${({ theme }) => media.mobile(`
+		> a {
+			padding: 10px 20px;
+			font-size: ${theme.fontSize.sm};
+
+			img {
+				width: 6px;
+				vertical-align: 0px;
+			}
+		}
+	`)}
 `;
 
 export const ProcessThumb = styled.div`
@@ -70,6 +82,13 @@ export const ProcessOverview = styled.section`
 			margin-right: 8px;
 		}
 	}
+
+	${({ theme }) => media.mobile(`
+		ul {
+			padding: 14px 20px;
+			font-size: ${theme.fontSize.xs};
+		}
+	`)}
 `;
 
 export const ProcessIntro = styled.section`
@@ -113,6 +132,23 @@ export const ProcessIntro = styled.section`
 	li:last-child {
 		margin: 0;
 	}
+
+	${({ theme }) => media.mobile(`
+		li {
+			h4 {
+				font-size: ${theme.fontSize.md};
+				font-weight: ${theme.fontWeight.medium};
+			}
+
+			p {
+				font-size: ${theme.fontSize.sm};
+			}
+
+			a {
+				font-size: ${theme.fontSize.base};
+			}
+		}
+	`)}
 `;
 
 export const ProcessTech = styled.section`
@@ -155,6 +191,17 @@ export const ProcessTech = styled.section`
 		text-align: left;
 	}
 
+	${({ theme }) => media.mobile(`
+		tbody td:nth-child(2) {
+			font-size: ${theme.fontSize.xs};
+			color: #555;
+		}
+
+		tbody td:nth-child(3) {
+			font-size: ${theme.fontSize.xs};
+			color: #555;
+		}
+	`)}
 `;
 
 export const ProcessContribut = styled.section`
@@ -214,6 +261,30 @@ export const ProcessContribut = styled.section`
 			}
 		}
 	}
+
+	
+	${({ theme }) => media.mobile(`
+		.contribut-role {
+			ul {
+				padding: 14px 20px;
+				font-size: ${theme.fontSize.xs};
+			}
+		}
+
+		.contribut-function {
+			li {
+				font-size: ${theme.fontSize.xs};
+
+				> span {
+					padding: 6px 10px;
+				}
+
+				> p {
+					color: #555;
+				}
+			}
+		}
+	`)}
 `;
 
 export const ProcessTrouble = styled.section`
@@ -282,6 +353,47 @@ export const ProcessTrouble = styled.section`
 			}
 		}
 	}
+
+	${({ theme }) => media.tablet(`
+		.trouble-item {
+			padding: 24px;
+
+			h4 {
+				width: 290px;
+				font-size: ${theme.fontSize.lg};
+			}
+
+			ul {
+				width: calc(100% - 290px);
+			}
+		}
+	`)}
+
+	${({ theme }) => media.mobile(`
+		.trouble-item {
+			flex-wrap: wrap;
+			padding: 22px;
+			gap: 20px;
+
+			h4 {
+				width: 100%;
+			}
+
+			ul {
+				width: 100%;
+
+				li {
+					p {
+						font-size: ${theme.fontSize.sm};
+					}
+
+					pre {
+						font-size: ${theme.fontSize.sm};
+					}
+				}
+			}
+		}
+	`)}
 `;
 
 export const ProcessFlow = styled.section`
@@ -330,4 +442,17 @@ export const ProcessReview = styled.section`
 	li:last-child {
 		margin: 0;
 	}
+
+	${({ theme }) => media.mobile(`
+		li {
+			h4 {
+				font-size: ${theme.fontSize.md};
+				font-weight: ${theme.fontWeight.medium};
+			}
+
+			p {
+				font-size: ${theme.fontSize.sm};
+			}
+		}
+	`)}
 `;

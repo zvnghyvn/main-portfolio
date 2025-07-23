@@ -104,7 +104,7 @@ export const HeaderNav = styled.nav`
   // 반응형
   ${({ theme }) => media.tablet(`
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 2%;
 
     button {
       font-size: ${theme.fontSize.md};
@@ -112,6 +112,18 @@ export const HeaderNav = styled.nav`
     
     img {
       width: 22px;
+    }
+  `)}
+
+  ${({ theme }) => media.mobile(`
+    gap: 15px;
+
+    button {
+      font-size: ${theme.fontSize.sm};
+    }
+
+    img {
+      width: 20px;
     }
   `)}
 `;
