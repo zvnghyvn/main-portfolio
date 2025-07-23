@@ -1,12 +1,72 @@
-# React + Vite
+# 📚 Main Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 프론트엔드 개발자, 권정현입니다.
+<br>
 
-Currently, two official plugins are available:
+프론트엔드 개발자로서의 역량을 보여주기 위해 제작한 **자기소개용 포트폴리오 웹사이트**입니다.  
+프로젝트, 기술 스택, 경험, 이력 등을 구조화된 섹션으로 나누어 한눈에 보기 쉽게 정리했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br><br>
 
-## Expanding the ESLint configuration
+## ✨ 주요 기능
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **🌓 다크 모드 토글**  
+원하는 테마로 포트폴리오를 감각적으로 전환할 수 있어요.
+
+- **🧭 부드러운 섹션 이동**  
+상단 메뉴를 클릭하면 해당 섹션으로 스르륵 이동해요.
+
+- **📱 반응형 UI**  
+PC와 모바일 모두에서 보기 편한 레이아웃이에요.
+
+- **🖼️ 데이터 기반 구성**  
+입력한 프로젝트, 경력, 스킬 등이 자동으로 예쁘게 보여져요.
+
+- **🎨 스타일 믹스인 적용**  
+반복되는 스타일은 믹스인으로 깔끔하게 정리했어요.
+
+<br><br>
+
+## 🛠️ 기술 스택
+
+| 항목        | 사용 기술                     |
+|-------------|-------------------------------|
+| Frontend    | React + JavaScript            |
+| Styling     | styled-components             |
+| 라우팅      | React Router Dom              |
+| 번들러      | Vite                          |
+
+<br><br>
+
+## 🚀 시작 방법
+
+<pre><code>
+npm install  
+npm run dev
+</code></pre>
+
+<br><br>
+
+## 🗂️ 디렉터리 구조
+
+src/  
+├── assets/  
+├── components/  
+├── data/  
+├── pages/ 
+├── sections/  
+├── styles/  
+│ ├── components/  
+│ ├── pages/  
+│ └── sections/  
+├── App.tsx  
+├── main.tsx  
+└── Router.tsx
+
+<br><br>
+
+## 🔗 라이브 데모  
+![캡쳐](https://github.com/user-attachments/assets/5e18b52c-6da5-4892-a6c8-43fac5b5b5fa)
+👉 [https://spill-it.vercel.app](https://spill-it.vercel.app)
+
+<br><br>
