@@ -99,6 +99,11 @@ export const HeaderNav = styled.nav`
   button {
     ${fontSize('lg')}
     ${text('gray')}
+    transition: 0.2s;
+
+    &:hover {
+      ${text('point')}
+    }
   }
 
   // 반응형
