@@ -75,7 +75,7 @@ const projects = [
   },
   {
     id: 'portfolio',
-    title: 'Main Portfolio',
+    title: 'My Portfolio',
     keyword: '포트폴리오 사이트',
     period: '2025.06 - 2025.07',
     type: '개인 프로젝트',

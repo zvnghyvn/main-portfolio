@@ -235,7 +235,7 @@ const projectProcess = [
     presentationUrl: '',
 
     overview: {
-      name: 'Main Portfolio',
+      name: 'My Portfolio',
       period: '2025.06 - 2025.07',
       members: '개인 프로젝트',
       role: '기여도 100%',
