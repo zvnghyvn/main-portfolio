@@ -414,7 +414,7 @@ const projectProcess = [
 
     flow: {
       description: '원문 입력 (결과보기 버튼 클릭)→ 서버에 번역/역번역 API 요청 → GPT API로 분석 및 조언 요청 → 모든 결과(번역·역번역·조언)를 한 번에 받아 UI에 표시',
-      image: '',
+      image: '/images/img_flow_truetext.jpg',
     },
 
     review: {
@@ -518,7 +518,7 @@ const projectProcess = [
 
     flow: {
       description: '메인(Nav로 이동) → About → Projects 리스트 → Project 디테일 → Posts 리스트 → Post 디테일',
-      image: '',
+      image: '/images/img_flow_designer.jpg',
     },
 
     review: {
