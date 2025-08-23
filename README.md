@@ -67,6 +67,6 @@ src/
 
 ## 🔗 라이브 데모  
 ![캡쳐](https://github.com/user-attachments/assets/5e18b52c-6da5-4892-a6c8-43fac5b5b5fa)
-👉 [https://spill-it.vercel.app](https://spill-it.vercel.app)
+👉 [https://zvnghyvn.vercel.app](https://zvnghyvn.vercel.app)
 
 <br><br>
