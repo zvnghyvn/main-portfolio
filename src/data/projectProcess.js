@@ -25,11 +25,29 @@ const projectProcess = [
     },
 
     techStack: [
-      { category: 'Frontend', tech: ['React', 'JavaScript'], reason: '사용자 행동에 따라 동적으로 변화하는 기능이 많아 상태 관리가 용이한 React를 선택했습니다.' },
-      { category: 'Styling', tech: ['styled-components'], reason: '조건에 따라 스타일이 동적으로 변화하는 구조였기 때문에, 자바스크립트 로직과 스타일을 함께 관리할 수 있는 styled-components를 선택했습니다.' },
-      { category: 'API', tech: ['Axios'], reason: 'AI 일정 생성 API와의 통신을 위해 직관적이고 사용하기 쉬운 Axios를 선택했습니다.' },
-      { category: 'Etc', tech: ['ESLint', 'Prettier'], reason: '팀 협업 시 코드 스타일 통일과 오류 방지를 위해 사용했습니다.' },
-      { category: 'Collabor', tech: ['GitHub', 'Postman', 'Figma', 'Notion', 'Discord', 'draw.io'], reason: '버전 관리, API 테스트, UI 설계, 문서 정리, 실시간 소통, 기능 흐름도 작성 등 협업과 기획에 필요한 도구들을 활용했습니다.' },
+      {
+        category: 'Frontend',
+        tech: ['React', 'JavaScript'],
+        reason: '사용자 행동에 따라 동적으로 변화하는 기능이 많아 상태 관리가 용이한 React를 선택했습니다.'
+      },
+      {
+        category: 'Styling',
+        tech: ['styled-components'],
+        reason: '조건에 따라 스타일이 동적으로 변화하는 구조였기 때문에, 자바스크립트 로직과 스타일을 함께 관리할 수 있는 styled-components를 선택했습니다.'
+      },
+      {
+        category: 'API',
+        tech: ['Axios'],
+        reason: 'AI 일정 생성 API와의 통신을 위해 직관적이고 사용하기 쉬운 Axios를 선택했습니다.' },
+      {
+        category: 'Etc',
+        tech: ['ESLint', 'Prettier'],
+        reason: '팀 협업 시 코드 스타일 통일과 오류 방지를 위해 사용했습니다.' },
+      {
+        category: 'Collabor',
+        tech: ['GitHub', 'Postman', 'Figma', 'Notion', 'Discord', 'draw.io'],
+        reason: '버전 관리, API 테스트, UI 설계, 문서 정리, 실시간 소통, 기능 흐름도 작성 등 협업과 기획에 필요한 도구들을 활용했습니다.'
+      },
     ],
 
     contribut: {
@@ -119,7 +137,7 @@ const projectProcess = [
   {
     id: 'spillIt',
     thumbnail: '/images/img_project_spillit_02.png',
-    demoUrl: 'url',
+    demoUrl: 'https://just-spill-it.vercel.app',
     githubUrl: 'https://github.com/zvnghyvn/spill-it',
     videoUrl: 'https://youtu.be/SnWadl0xnlg',
     presentationUrl: '',
@@ -140,10 +158,26 @@ const projectProcess = [
     },
 
     techStack: [
-      { category: 'Frontend', tech: ['React', 'TypeScript'], reason: '안정성과 가독성을 높이기 위해 TypeScript를 사용했습니다. 정적 타입을 통해 컴파일 타임에 오류를 미리 확인할 수 있어 유지 보수에 유리하고, 최근 프론트엔드 개발의 기본 기술이기에 익숙해지고자 적극적으로 활용했습니다.' },
-      { category: 'Styling', tech: ['SCSS'], reason: '스타일링에는 **SCSS(SASS)**를 사용했습니다. 중첩, 변수, 믹스인 등의 기능을 활용해 코드를 더 효율적이고 유지 보수하기 쉽게 작성할 수 있었으며, 컴포넌트별 스타일 분리도 수월했습니다.' },
-      { category: 'Etc', tech: ['Vite', 'Prettier'], reason: '빠른 개발 환경 구성을 위해 Vite를 사용했으며, 코드 스타일 통일과 가독성 향상을 위해 Prettier를 함께 적용했습니다.' },
-      { category: 'Collabor', tech: ['GitHub', 'Figma', 'Notion'], reason: '버전 관리가 편한 GitHub를 사용하였으며, UI 설계를 위한 Figma, 작업 정리를 위한 Notion을 함께 활용했습니다.' },
+      {
+        category: 'Frontend',
+        tech: ['React', 'TypeScript'],
+        reason: '안정성과 가독성을 높이기 위해 TypeScript를 사용했습니다. 정적 타입을 통해 컴파일 타임에 오류를 미리 확인할 수 있어 유지 보수에 유리하고, 최근 프론트엔드 개발의 기본 기술이기에 익숙해지고자 적극적으로 활용했습니다.'
+      },
+      {
+        category: 'Styling',
+        tech: ['SCSS'],
+        reason: '스타일링에는 **SCSS(SASS)**를 사용했습니다. 중첩, 변수, 믹스인 등의 기능을 활용해 코드를 더 효율적이고 유지 보수하기 쉽게 작성할 수 있었으며, 컴포넌트별 스타일 분리도 수월했습니다.'
+      },
+      {
+        category: 'Etc',
+        tech: ['Vite', 'Prettier'],
+        reason: '빠른 개발 환경 구성을 위해 Vite를 사용했으며, 코드 스타일 통일과 가독성 향상을 위해 Prettier를 함께 적용했습니다.'
+      },
+      {
+        category: 'Collabor',
+        tech: ['GitHub', 'Vercel', 'Figma', 'Notion'],
+        reason: '버전 관리가 편한 GitHub를 사용하였으며, UI 설계를 위한 Figma, 작업 정리를 위한 Notion을 함께 활용했습니다.'
+      },
     ],
 
     contribut: {
@@ -229,7 +263,7 @@ const projectProcess = [
   {
     id: 'portfolio',
     thumbnail: '/images/img_project_main_03.png',
-    demoUrl: 'url',
+    demoUrl: 'https://zvnghyvn.vercel.app',
     githubUrl: 'https://github.com/zvnghyvn/main-portfolio',
     videoUrl: '',
     presentationUrl: '',
@@ -311,7 +345,8 @@ const projectProcess = [
             <About />
             <Skills />
             // ...섹션들
-          </main>`,
+          </main>
+          `,
         result: '스크린 리더 사용자에게 각 페이지의 주요 콘텐츠를 명확하게 인식시킬 수 있고, SEO에도 유리한 구조로 개선되었습니다. 웹 표준을 실제로 구현하며 접근성에 대한 이해를 높일 수 있었습니다.',
       },
     ],
@@ -335,10 +370,10 @@ const projectProcess = [
   },
   {
     id: 'trueText',
-    thumbnail: '',
-    demoUrl: 'youtube',
+    thumbnail: '/images/img_project_trueText_02.png',
+    demoUrl: 'https://true-text.vercel.app',
     githubUrl: 'https://github.com/zvnghyvn/true-text',
-    videoUrl: 'youtube',
+    videoUrl: 'https://youtu.be/s-RAK8J03eU',
     presentationUrl: '',
 
     overview: {
@@ -407,7 +442,8 @@ const projectProcess = [
             const translation = await translateText({ q: text, source, target });
             const backTranslation = await translateText({ q: translation, source: target, target: source });
             res.json({ translation, backTranslation });
-          });`,
+          });
+          `,
         result: `API 키가 네트워크에 노출되지 않으면서 번역/역번역이 안정적으로 동작하도록 개선했습니다.`,
       },
     ],
@@ -459,17 +495,17 @@ const projectProcess = [
       },
       {
         category: 'Styling',
-        tech: ['styled-components', 'CSS3'],
-        reason: '디자인 시안과 동일하게 구현하기 위해 styled-components로 세밀한 스타일 제어를 했으며, CSS 애니메이션으로 자연스러운 전환 효과를 적용했습니다.',
+        tech: ['SCSS'],
+        reason: '스타일링에는 **SCSS(SASS)**를 사용했습니다. 중첩, 변수, 믹스인 등의 기능을 활용해 코드를 더 효율적이고 유지 보수하기 쉽게 작성할 수 있었으며, 컴포넌트별 스타일 분리도 수월했습니다.',
       },
       {
         category: 'Animation',
-        tech: ['JavaScript', 'CSS3', 'Lottie'],
+        tech: ['JavaScript', 'Lottie'],
         reason: '사용자의 동작에 따라 반응하는 인터랙션과 Lottie 애니메이션을 적용해 역동적인 UI를 구현했습니다.',
       },
       {
         category: 'Collabor',
-        tech: ['GitHub', 'Figma'],
+        tech: ['GitHub', 'Vercel', 'Figma'],
         reason: 'GitHub로 버전 관리, Figma의 QA 영역을 활용해 디자이너와 실시간 이슈 및 피드백을 주고받았습니다.',
       },
     ],
@@ -491,7 +527,7 @@ const projectProcess = [
         },
         {
           title: '세밀한 UI 구현',
-          content: '디자이너 시안과 100% 동일하게 보이도록 마진, 패딩, 타이포그래피, 컬러 등 디테일을 조정했습니다.',
+          content: '디자인 시안을 충실히 반영하면서도 컴포넌트화와 SCSS 모듈화를 통해 유지보수성을 확보했습니다.',
         },
       ],
     },
@@ -501,18 +537,24 @@ const projectProcess = [
         title: 'Lottie 애니메이션 초기 로딩 및 페이지 전환 문제',
         problem: `Lottie 애니메이션이 페이지 진입 시 늦게 나타나거나, 다른 페이지로 이동해도 계속 재생되는 문제가 있었습니다.`,
         solution: `애니메이션을 사전 로드하고, 페이지 전환 시 컴포넌트를 언마운트하여 자동으로 정리되도록 구현했습니다.`,
-        code: `useEffect(() => {
+        code: `
+        useEffect(() => {
           loadAnimation();
           return () => animation.destroy(); // 페이지 전환 시 정리
-        }, []);`,
+        }, []);
+        `,
         result: '페이지 진입 시 애니메이션이 즉시 시작되고, 다른 페이지로 이동하면 정상적으로 종료되도록 개선했습니다.',
       },
       {
-        title: '복잡한 인터랙션의 성능 저하',
-        problem: `스크롤 이벤트와 애니메이션이 겹칠 때 일부 구간에서 렌더링이 느려졌습니다.`,
-        solution: `requestAnimationFrame과 스로틀링(throttling)을 적용해 이벤트 호출 횟수를 줄였습니다.`,
-        code: `window.addEventListener('scroll', throttle(handleScroll, 100));`,
-        result: '스크롤과 애니메이션이 부드럽게 동작하도록 성능을 개선했습니다.',
+        title: '상세 페이지 데이터 미렌더링',
+        problem: `프로젝트 상세 페이지에 직접 진입하면 본문이 보이지 않고 헤더/푸터만 표시되는 문제가 있었습니다. 콘솔에는 "Rendered fewer hooks than expected" 에러가 발생했습니다.`,
+        solution: `데이터 조회와 훅 호출이 꼬이지 않도록 컴포넌트를 래퍼와 본문으로 분리했습니다. 상위에서는 데이터 유효성만 검사하고, 하위에서는 항상 동일한 순서로 훅을 호출하도록 수정했습니다.`,
+        code: `
+        const project = projects.find(p => String(p.id) === id);
+        if (!project) return <Empty />;
+        return <ProjectDetailContent project={project} />;
+        `,
+        result: '어떤 경로로 진입해도 상세 본문이 정상적으로 렌더링되고, 에러가 사라졌습니다.',
       },
     ],
 

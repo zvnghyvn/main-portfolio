@@ -6,7 +6,7 @@ export const Process = styled.main`
     padding: 80px 0 120px;
 
     h2 {
-      font-size: 32px;
+      font-size: 40px;
 			text-align: center;
     }
 
@@ -26,7 +26,7 @@ export const ProcessBtns = styled.div`
 	align-items: center;
 	justify-content: center;
 	${gap('base')}
-	margin: 40px auto 0;
+	margin: 60px auto 0;
 
 	> a {
 		display: block;
@@ -74,8 +74,8 @@ export const ProcessOverview = styled.section`
 		padding: 24px 32px;
 		${radius('xl')}
 		${bg('grayLight')}
-		${fontSize('md')}
-		line-height: 1.6;
+		${fontSize('base')}
+		line-height: 1.8;
 
 		> li::before {
 			content: "•";
@@ -86,7 +86,7 @@ export const ProcessOverview = styled.section`
 	${({ theme }) => media.mobile(`
 		ul {
 			padding: 14px 20px;
-			font-size: ${theme.fontSize.xs};
+			font-size: ${theme.fontSize.sm};
 		}
 	`)}
 `;
@@ -103,8 +103,8 @@ export const ProcessIntro = styled.section`
 		}
 
 		p {
-			${fontSize('base')}
-			line-height: 1.6;
+			${fontSize('lg')}
+			line-height: 1.8;
 		}
 
 		p::before {
@@ -115,7 +115,7 @@ export const ProcessIntro = styled.section`
 		a {
 			${fontFamily('pretendard')}
 			${text('point')}
-			font-size: 18px;
+			${fontSize('md')}
 			transition: 0.2s;
 
 			img {
@@ -136,16 +136,16 @@ export const ProcessIntro = styled.section`
 	${({ theme }) => media.mobile(`
 		li {
 			h4 {
-				font-size: ${theme.fontSize.md};
+				font-size: ${theme.fontSize.sm};
 				font-weight: ${theme.fontWeight.medium};
 			}
 
 			p {
-				font-size: ${theme.fontSize.sm};
+				font-size: ${theme.fontSize.md};
 			}
 
 			a {
-				font-size: ${theme.fontSize.base};
+				font-size: ${theme.fontSize.sm};
 			}
 		}
 	`)}
@@ -164,6 +164,9 @@ export const ProcessTech = styled.section`
 	}
 
 	th {
+		${fontSize('sm')}
+		${fontWeight('regular')}
+		${text('grayDark')}
 		border-bottom-color: rgba(200, 200, 200, 0.5);
 	}
 
@@ -176,29 +179,30 @@ export const ProcessTech = styled.section`
 	}
 	
 	tbody td:nth-child(1) {
-		${fontWeight('bold')}
+		${fontSize('sm')}
+		${text('grayDark')}
 	}
 
 	tbody td:nth-child(2) {
-		${fontSize('sm')}
+		${fontSize('base')}
 		${fontWeight('medium')}
 	}
 
 	tbody td:nth-child(3) {
 		${fontFamily('pretendard')}
-		${fontSize('sm')}
+		${fontSize('base')}
 		${fontWeight('regular')}
 		text-align: left;
 	}
 
 	${({ theme }) => media.mobile(`
 		tbody td:nth-child(2) {
-			font-size: ${theme.fontSize.xs};
+			font-size: ${theme.fontSize.md};
 			color: #555;
 		}
 
 		tbody td:nth-child(3) {
-			font-size: ${theme.fontSize.xs};
+			font-size: ${theme.fontSize.md};
 			color: #555;
 		}
 	`)}
@@ -217,7 +221,7 @@ export const ProcessContribut = styled.section`
 			padding: 24px 32px;
 			${radius('xl')}
 			${bg('grayLight')}
-			${fontSize('md')}
+			${fontSize('base')}
 			line-height: 1.6;
 
 			> li::before {
@@ -236,17 +240,17 @@ export const ProcessContribut = styled.section`
 
 			li {
 				width: calc((100% - 32px) / 2);
-				${fontSize('sm')}
+				${fontSize('md')}
 
 				> span {
-					padding: 8px 12px;
+					padding: 8px 14px;
 					${radius('base')}	
 					${bg('grayLight')}
 					line-height: 1;
 				}
 
 				> p {
-					margin-top: 14px; 
+					margin-top: 18px; 
 					${fontFamily('pretendard')}
 				}
 
@@ -267,7 +271,7 @@ export const ProcessContribut = styled.section`
 		.contribut-role {
 			ul {
 				padding: 14px 20px;
-				font-size: ${theme.fontSize.xs};
+				font-size: ${theme.fontSize.md};
 			}
 		}
 
@@ -327,7 +331,7 @@ export const ProcessTrouble = styled.section`
 
 				p {
 					${fontFamily('pretendard')}
-					${fontSize('md')}
+					${fontSize('base')}
 				}
 
 				pre {
@@ -338,7 +342,7 @@ export const ProcessTrouble = styled.section`
 					
 					code {
 						${fontFamily('ibm')}
-						${fontSize('xs')}
+						${fontSize('sm')}
 						line-height: 1.2;
 					}
 				}
@@ -348,7 +352,7 @@ export const ProcessTrouble = styled.section`
 				margin: 0;
 
 				p {
-					${fontWeight('bold')}
+					${fontWeight('semibold')}
 				}
 			}
 		}
@@ -373,7 +377,7 @@ export const ProcessTrouble = styled.section`
 		.trouble-item {
 			flex-wrap: wrap;
 			padding: 22px;
-			gap: 20px;
+			gap: 30px;
 
 			h4 {
 				width: 100%;
@@ -383,12 +387,14 @@ export const ProcessTrouble = styled.section`
 				width: 100%;
 
 				li {
+					margin-bottom: 24px;
+
 					p {
-						font-size: ${theme.fontSize.sm};
+						font-size: ${theme.fontSize.md};
 					}
 
 					pre {
-						font-size: ${theme.fontSize.sm};
+						font-size: ${theme.fontSize.xs};
 					}
 				}
 			}
@@ -419,10 +425,10 @@ export const ProcessReview = styled.section`
 	}
 
 	li {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 
 		h4 {
-			margin-bottom: 14px;
+			margin-bottom: 5px;
 			${fontSize('sm')}
 			${fontWeight('regular')}
 			${text('grayDark')}
@@ -434,7 +440,7 @@ export const ProcessReview = styled.section`
 		}
 
 		p {
-			${fontFamily('pretendard')}
+			${fontSize('base')}
 			line-height: 1.6;
 		}
 	}
@@ -446,12 +452,11 @@ export const ProcessReview = styled.section`
 	${({ theme }) => media.mobile(`
 		li {
 			h4 {
-				font-size: ${theme.fontSize.md};
-				font-weight: ${theme.fontWeight.medium};
+				font-size: ${theme.fontSize.sm};
 			}
 
 			p {
-				font-size: ${theme.fontSize.sm};
+				font-size: ${theme.fontSize.md};
 			}
 		}
 	`)}
