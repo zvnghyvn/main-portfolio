@@ -467,7 +467,7 @@ const projectProcess = [
   {
     id: 'designer',
     thumbnail: '',
-    demoUrl: 'youtube',
+    demoUrl: 'https://minhye.vercel.app',
     githubUrl: 'https://github.com/zvnghyvn/designer-portfolio',
     videoUrl: 'youtube',
     presentationUrl: '',

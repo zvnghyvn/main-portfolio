@@ -139,7 +139,7 @@ const projects = [
     media: [],
     techStack: ['React', 'JavaScript', 'SCSS', 'Vite'],
     tools: ['Github', 'Figma', 'Notion', 'Vercel'],
-    demoUrl: '',
+    demoUrl: 'https://minhye.vercel.app',
   },
 ]
 
