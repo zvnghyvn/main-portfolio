@@ -87,7 +87,23 @@ const projects = [
       'styled-components를 활용한 다크모드 대응 준비와 컴포넌트 스타일 일원화',
       'react-router를 이용한 페이지 전환 및 Smooth Scroll 구현',
     ],
-    media: [],
+    media: [
+      {
+        type: 'image',
+        src: '/images/img_project_main_01.png',
+        alt: '포트폴리오 메인 화면',
+      },
+      {
+        type: 'image',
+        src: '/images/img_project_main_02.png',
+        alt: '포트폴리오 메인 화면 다크모드',
+      },
+      {
+        type: 'image',
+        src: '/images/img_project_main_03.png',
+        alt: '포트폴리오 프로젝트 상세 화면',
+      },
+    ],
     techStack: ['React', 'JavaScript', 'styled-components', 'Vite'],
     tools: ['Github', 'Figma', 'Notion', 'Vercel'],
     demoUrl: 'https://zvnghyvn.vercel.app',
@@ -136,7 +152,23 @@ const projects = [
       'Figma 프로토타입 임베드와 Lottie 애니메이션을 통한 디자인 자산 활용',
       '데이터 파일(.js) 기반의 반복 렌더링으로 유지보수성과 확장성 강화',
     ],
-    media: [],
+    media: [
+      {
+        type: 'image',
+        src: '/images/img_project_design_01.png',
+        alt: '디자이너 사이트 메인 화면',
+      },
+      {
+        type: 'image',
+        src: '/images/img_project_design_02.png',
+        alt: '디자이너 사이트 프로젝트 상세 화면',
+      },
+      {
+        type: 'image',
+        src: '/images/img_project_design_03.png',
+        alt: '디자이너 사이트 포스트 상세 화면',
+      },
+    ],
     techStack: ['React', 'JavaScript', 'SCSS', 'Vite'],
     tools: ['Github', 'Figma', 'Notion', 'Vercel'],
     demoUrl: 'https://minhye.vercel.app',

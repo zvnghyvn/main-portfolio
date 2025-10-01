@@ -1,5 +1,11 @@
 const certificates = [
   {
+    id: "promptEngineer",
+    title: '프롬프트엔지니어 1급',
+    issuer: '한국직업능력연구원',
+    date: '2025.10',
+  },
+  {
     id: "ncpCertificate",
     title: 'Naver Cloud Platform certified associate',
     issuer: '네이버 클라우드 플랫폼',

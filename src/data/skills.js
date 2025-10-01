@@ -19,7 +19,7 @@ const skillList = [
   {
     id: 'development',
     category: 'Development Tools',
-    tools: ['VSCode', 'Eclipse', 'STS'],
+    tools: ['Cursor', 'VSCode', 'Eclipse', 'STS'],
   },
   {
     id: 'collaboration',

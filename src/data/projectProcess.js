@@ -38,11 +38,13 @@ const projectProcess = [
       {
         category: 'API',
         tech: ['Axios'],
-        reason: 'AI 일정 생성 API와의 통신을 위해 직관적이고 사용하기 쉬운 Axios를 선택했습니다.' },
+        reason: 'AI 일정 생성 API와의 통신을 위해 직관적이고 사용하기 쉬운 Axios를 선택했습니다.'
+      },
       {
         category: 'Etc',
         tech: ['ESLint', 'Prettier'],
-        reason: '팀 협업 시 코드 스타일 통일과 오류 방지를 위해 사용했습니다.' },
+        reason: '팀 협업 시 코드 스타일 통일과 오류 방지를 위해 사용했습니다.'
+      },
       {
         category: 'Collabor',
         tech: ['GitHub', 'Postman', 'Figma', 'Notion', 'Discord', 'draw.io'],
@@ -122,14 +124,14 @@ const projectProcess = [
     review: {
       good: `사용자에게 **실질적인 도움이 되는 서비스**를 만들자는 기획 의도에 충실했고, 여행 계획이 어려운 사람들을 위한 솔루션으로써 기능과 흐름이 잘 구현되었다고 생각합니다.    
         첫 팀 협업 프로젝트였지만 다른 역할팀과 **원활한 소통**과 **명확한 역할 분담** 덕분에 큰 갈등 없이 진행할 수 있었고, UI/UX 측면에서도 직관적인 결과물이 나와 만족스러웠습니다.`,
-      
+
       hard: `사용자가 다양한 행동을 할 수 있는 구조였기 때문에 **모든 케이스를 고려하면서 버그 없이 구현하는 것**이 가장 어려웠습니다.    
         특히 사용자의 사용 순서를 예측하기 어려워 **예외 상황 처리에 시간이 많이 소요**되었습니다.    
         또한 팀장으로서 팀원들의 작업 상황을 체크하고 전체 일정을 조율해야 했는데, **개발과 관리 역할을 동시에 수행하는 것이 쉽지 않았습니다.**`,
-      
+
       regret: `팀장으로서 팀원들에게 더 큰 도움을 주고 싶었지만, 저 역시 모든 부분이 처음이라 **완벽하게 리드하지 못한 점**이 아쉬웠습니다.    
         또한 빠듯한 일정으로 인해 기능 구현을 다소 **급하게 마무리한 부분**이 있어 아쉬움이 남습니다.`,
-      
+
       improve: `전체적으로 **코드 품질 개선과 리팩터링이 필요**하다고 느꼈습니다.    
         현재는 서울 지역만 일정 생성을 지원하지만, 추후에는 **다른 지역 혹은 해외 여행지까지 확장**하여 보다 많은 사용자에게 도움이 되는 서비스로 발전시키고 싶습니다.`,
     },
@@ -249,7 +251,7 @@ const projectProcess = [
       hard: `**IndexedDB와 React 상태 관리 간 동기화 문제**를 해결하는 과정이 가장 어려웠습니다.   
         데이터베이스에는 정상 저장되지만 UI에 반영되지 않는 상황을 겪으며 **프론트엔드의 데이터 흐름과 상태 관리의 중요성**을 절실히 느꼈고,    
         이를 해결하기 위해 반복적으로 테스트하고 구조를 개선하는 경험을 했습니다.`,
-        
+
       regret: `**백엔드 부재**로 인해 회원 시스템과 서버 기반 데이터 저장 기능을 구현하지 못한 점이 가장 아쉬웠습니다.   
         브라우저 저장소만 사용하다 보니 **다른 기기 접근이나 데이터 삭제 시 기록 유실 가능성**이 존재했고,    
         이는 감정 기록 앱으로서 장기적인 신뢰성과 확장성에 한계를 느끼게 했습니다.`,
@@ -262,7 +264,7 @@ const projectProcess = [
   },
   {
     id: 'portfolio',
-    thumbnail: '/images/img_project_main_03.png',
+    thumbnail: '/images/img_project_main_04.png',
     demoUrl: 'https://zvnghyvn.vercel.app',
     githubUrl: 'https://github.com/zvnghyvn/main-portfolio',
     videoUrl: '',
@@ -466,10 +468,10 @@ const projectProcess = [
   },
   {
     id: 'designer',
-    thumbnail: '',
+    thumbnail: '/images/img_project_design_04.png',
     demoUrl: 'https://minhye.vercel.app',
     githubUrl: 'https://github.com/zvnghyvn/designer-portfolio',
-    videoUrl: 'youtube',
+    videoUrl: '',
     presentationUrl: '',
 
     overview: {
@@ -534,7 +536,7 @@ const projectProcess = [
 
     troubleshooting: [
       {
-        title: 'Lottie 애니메이션 초기 로딩 및 페이지 전환 문제',
+        title: 'Lottie 애니메이션 초기 로딩 및 페이지 전환 문제 (구버전)',
         problem: `Lottie 애니메이션이 페이지 진입 시 늦게 나타나거나, 다른 페이지로 이동해도 계속 재생되는 문제가 있었습니다.`,
         solution: `애니메이션을 사전 로드하고, 페이지 전환 시 컴포넌트를 언마운트하여 자동으로 정리되도록 구현했습니다.`,
         code: `
