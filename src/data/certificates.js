@@ -2,7 +2,7 @@ const certificates = [
   {
     id: "promptEngineer",
     title: '프롬프트엔지니어 1급',
-    issuer: '한국직업능력연구원',
+    issuer: '한국NCS자격개발원',
     date: '2025.10',
   },
   {
