@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from '@pages/Home'
 import ProjectProcess from '@pages/ProjectProcess'
+import AiCreate from '@pages/AiCreate'
 import ScrollToTop from '@components/ScrollToTop'
 
 export default function Router() {
@@ -10,6 +11,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project/process/:id" element={<ProjectProcess />} />
+        <Route path="/aicreate" element={<AiCreate />} />
       </Routes>
     </>
   )

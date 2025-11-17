@@ -2,7 +2,7 @@ import ProjectCard from '@components/ProjectCard'
 import projectList from '@data/projects'
 import { useState } from 'react'
 import Modal from '@components/Modal'
-import { Project } from '@styles/sections/ProjectSection.styles';
+import { Project } from '@styles/sections/ProjectSection.styles'
 
 const ProjectsSection = () => {
   const [modalImage, setModalImage] = useState(null)
