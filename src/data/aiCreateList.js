@@ -1,12 +1,20 @@
 const aiCreateList = [
   // {
-  //   id: 'aic-07',
+  //   id: 'aic-08',
   //   topic: '백작영애의 하루',
   //   tools: ['grok', 'klingAi', 'Premiere', 'Photoshop'],
   //   media: [
   //     '/create/animation_1.mp4',
   //   ],
   // },
+  {
+    id: 'aic-07',
+    topic: '패션 모델',
+    tools: ['midjourney', 'nanobanana', 'Photoshop'],
+    media: [
+      '/create/fashion_model_4.jpg',
+    ],
+  },
   {
     id: 'aic-06',
     topic: '슬롯머신 애니메이션',
@@ -20,8 +28,8 @@ const aiCreateList = [
     topic: '트윈 모델',
     tools: ['midjourney', 'Photoshop'],
     media: [
-      '/create/fashion_model_1_woman_1.png',
-      '/create/fashion_model_1_woman_2.png',
+      '/create/fashion_model_2_1.png',
+      '/create/fashion_model_2_2.png',
     ],
   },
   {
@@ -29,10 +37,10 @@ const aiCreateList = [
     topic: '패션 모델',
     tools: ['midjourney', 'klingAi', 'Photoshop'],
     media: [
-      '/create/fashion_model_2_man_1.png',
-      '/create/fashion_model_2_man_2.mp4',
-      '/create/fashion_model_2_man_3.jpg',
-      '/create/fashion_model_2_man_4.jpg',
+      '/create/fashion_model_3_1.png',
+      '/create/fashion_model_3_2.mp4',
+      '/create/fashion_model_3_3.jpg',
+      '/create/fashion_model_3_4.jpg',
     ],
   },
   {
@@ -40,8 +48,8 @@ const aiCreateList = [
     topic: '패션 모델',
     tools: ['midjourney', 'Photoshop'],
     media: [
-      '/create/fashion_model_1_man_1.png',
-      '/create/fashion_model_1_man_2.png',
+      '/create/fashion_model_1_1.png',
+      '/create/fashion_model_1_2.png',
     ],
   },
   {
@@ -49,8 +57,8 @@ const aiCreateList = [
     topic: '뷰티 모델',
     tools: ['klingAi', 'Photoshop'],
     media: [
-      '/create/beauty_model_1_man.jpg',
-      '/create/beauty_model_1_woman.jpg',
+      '/create/beauty_model_1_1.jpg',
+      '/create/beauty_model_1_2.jpg',
     ],
   },
   {

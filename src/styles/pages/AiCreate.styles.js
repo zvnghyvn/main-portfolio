@@ -59,8 +59,6 @@ export const AiCard = styled.li`
     position: relative;
     width: 100%;
     overflow: hidden;
-    ${radius('xl')}
-    background: ${({ theme }) => theme.colors.black};
   }
 
   img,
