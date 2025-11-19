@@ -14,7 +14,8 @@ const aiCreateList = [
     tools: ['grok', 'VLLO', 'Premiere', 'Photoshop'],
     media: [
       '/create/art_1.jpg',
-      '/create/art_1.mp4',
+      '/create/art_1_2.mp4',
+      '/create/art_1_1.mp4',
     ],
   },
   {
