@@ -1,12 +1,22 @@
 const aiCreateList = [
-  // {
-  //   id: 'aic-08',
-  //   topic: '백작영애의 하루',
-  //   tools: ['grok', 'klingAi', 'Premiere', 'Photoshop'],
-  //   media: [
-  //     '/create/animation_1.mp4',
-  //   ],
-  // },
+  {
+    id: 'aic-09',
+    topic: '미니어처',
+    tools: ['grok', 'VLLO', 'Premiere', 'Photoshop'],
+    media: [
+      '/create/art_2.jpg',
+      '/create/art_2.mp4',
+    ],
+  },
+  {
+    id: 'aic-08',
+    topic: '백작영애의 하루',
+    tools: ['grok', 'VLLO', 'Premiere', 'Photoshop'],
+    media: [
+      '/create/art_1.jpg',
+      '/create/art_1.mp4',
+    ],
+  },
   {
     id: 'aic-07',
     topic: '패션 모델',
