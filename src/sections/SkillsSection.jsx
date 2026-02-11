@@ -1,5 +1,5 @@
 import skillList from '@data/skills'
-import { Skill } from '@styles/sections/SkillSection.styles';
+import { Skill } from '@styles/sections/SkillSection.styles'
 
 const SkillsSection = () => {
   return (
@@ -16,7 +16,16 @@ const SkillsSection = () => {
                 <li key={index}>{item}</li>
               ))}
             </ul>
-            {skill.description && <p>{skill.description}</p>}
+
+            {skill.description && (
+              <p className="skill-description">
+                {skill.url ? (
+                  <a href={skill.url}>{skill.description}</a>
+                ) : (
+                  skill.description
+                )}
+              </p>
+            )}
           </li>
         ))}
       </ul>

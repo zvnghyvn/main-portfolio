@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import aiCreateList from '@data/aiCreateList'
+import Modal from '@components/Modal'
 import { AiCreateWrap, AiMasonry, AiCard } from '@styles/pages/AiCreate.styles'
 
 const isVideoFile = (src) => {
@@ -6,6 +8,8 @@ const isVideoFile = (src) => {
 }
 
 const AiCreate = () => {
+  const [modalImage, setModalImage] = useState(null)
+  
   return (
     <AiCreateWrap id="ai-create">
       <div className="inner">
@@ -15,34 +19,83 @@ const AiCreate = () => {
           {aiCreateList.map((project) =>
             project.media?.map((src, index) => {
               const isVideo = isVideoFile(src)
+              const externalUrl = project.url
+              const hasExternalLink = Boolean(externalUrl)
 
               return (
                 <AiCard key={`${project.id}-${index}`}>
-                  <div className="thumb">
-                    {isVideo ? (
-                      <video
-                        src={src}
-                        muted
-                        autoPlay
-                        loop
-                        playsInline
-                      />
-                    ) : (
-                      <img src={src} alt={project.topic} />
-                    )}
+                  {hasExternalLink ? (
+                    <a
+                      className="thumb"
+                      href={externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {isVideo ? (
+                        <video
+                          src={src}
+                          muted
+                          autoPlay
+                          loop
+                          playsInline
+                        />
+                      ) : (
+                        <img src={src} alt={project.topic} />
+                      )}
 
-                    <div className="overlay">
-                      <span className="tools">
-                        {project.tools.join(' · ')}
-                      </span>
-                      <span className="topic">{project.topic}</span>
-                    </div>
-                  </div>
+                      <div className="overlay">
+                        <span className="tools">
+                          {project.tools.join(' · ')}
+                        </span>
+                        <span className="topic">{project.topic}</span>
+                      </div>
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      className="thumb"
+                      onClick={
+                        isVideo || hasExternalLink
+                          ? undefined
+                          : () => setModalImage(src)
+                      }
+                      aria-label={
+                        isVideo
+                          ? hasExternalLink
+                            ? `${project.topic} 외부 영상으로 이동`
+                            : `${project.topic} 영상`
+                          : `${project.topic} 이미지 확대`
+                      }
+                    >
+                      {isVideo ? (
+                        <video
+                          src={src}
+                          muted
+                          autoPlay
+                          loop
+                          playsInline
+                        />
+                      ) : (
+                        <img src={src} alt={project.topic} />
+                      )}
+
+                      <div className="overlay">
+                        <span className="tools">
+                          {project.tools.join(' · ')}
+                        </span>
+                        <span className="topic">{project.topic}</span>
+                      </div>
+                    </button>
+                  )}
                 </AiCard>
               )
             })
           )}
         </AiMasonry>
+
+        {modalImage && (
+          <Modal src={modalImage} onClose={() => setModalImage(null)} />
+        )}
       </div>
     </AiCreateWrap>
   )

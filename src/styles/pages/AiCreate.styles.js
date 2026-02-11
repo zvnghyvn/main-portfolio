@@ -57,6 +57,7 @@ export const AiCard = styled.li`
 
   .thumb {
     position: relative;
+    display: block;
     width: 100%;
     overflow: hidden;
   }

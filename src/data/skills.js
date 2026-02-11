@@ -17,19 +17,21 @@ const skillList = [
     description: '*간단한 CRUD 작업 구현 경험',
   },
   {
-    id: 'development',
-    category: 'Development Tools',
-    tools: ['Cursor', 'VSCode', 'Eclipse', 'STS'],
-  },
-  {
-    id: 'collaboration',
-    category: 'Version Control & Collaboration Tools',
-    tools: ['Github', 'Postman', 'Notion'],
+    id: 'ai',
+    category: 'AI Tools',
+    tools: ['Cursor', 'Midjourney', 'Grok', 'KlingAi', 'ChatGPT', 'Gemini'],
+    description: 'AI 작품 보러가기 >',
+    url: '/aicreate',
   },
   {
     id: 'design',
     category: 'Design Tools',
     tools: ['Figma', 'Adobe XD', 'Canva', 'Photoshop', 'Illustrator'],
+  },
+  {
+    id: 'collaboration',
+    category: 'Version Control & Collaboration Tools',
+    tools: ['Github', 'Postman', 'Notion'],
   },
 ]
 

@@ -1,5 +1,14 @@
 const aiCreateList = [
   {
+    id: 'aic-10',
+    topic: '농협 공모전',
+    tools: ['grok', 'klingAi', 'VLLO', 'Premiere'],
+    url: 'https://youtu.be/vNIVZtaapPc',
+    media: [
+      '/create/animation_2.mp4',
+    ],
+  },
+  {
     id: 'aic-09',
     topic: '미니어처',
     tools: ['grok', 'VLLO', 'Premiere', 'Photoshop'],
@@ -12,6 +21,7 @@ const aiCreateList = [
     id: 'aic-08',
     topic: '백작영애의 하루',
     tools: ['grok', 'VLLO', 'Premiere', 'Photoshop'],
+    url: 'https://youtube.com/shorts/2YZyf3zgAmA',
     media: [
       '/create/art_1.jpg',
       '/create/art_1_2.mp4',
@@ -30,6 +40,7 @@ const aiCreateList = [
     id: 'aic-06',
     topic: '슬롯머신 애니메이션',
     tools: ['midjourney', 'klingAi', 'VLLO', 'Premiere', 'Photoshop'],
+    url: 'https://youtu.be/dOkiGng677M',
     media: [
       '/create/animation_1.mp4',
     ],

@@ -4,7 +4,7 @@ import { Education } from '@styles/sections/EducationSection.styles';
 const EducationSection = () => {
   return (
     <Education id="education">
-      <h2 className="title-sm">Education & Activities</h2>
+      <h2 className="title-sm">Education & Achievements</h2>
 
       <ul className="education-list">
         {educationList.map((education) => (

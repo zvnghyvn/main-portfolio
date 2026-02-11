@@ -1,5 +1,14 @@
 const education = [
   {
+    id: 'NonghyupContest',
+    title: '농협 AI 공모전 수상',
+    period: '2025.12',
+    features: [
+			'농협 AI·숏폼 영상 공모전 「내가 최고! 농협 CREATOR」에서 장려상 수상',
+			'ChatGPT, Grok, Kling을 활용해 ‘농협의 농촌 활력화 사업 홍보’를 주제로 기획부터 연출, AI 영상 편집 수행',
+    ]
+  },
+  {
     id: 'naverCloudCampAcademy',
     title: '네이버 클라우드 캠프 /nAIaaS 개발자 과정',
     period: '2024.04-2024.10',

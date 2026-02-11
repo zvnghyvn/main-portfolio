@@ -22,7 +22,7 @@ export const Content = styled.div`
     overflow-x: hidden;
     overflow-y: auto;
     max-width: 50vw;
-    max-height: 60vh;
+    max-height: 80vh;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     cursor: auto;
 
