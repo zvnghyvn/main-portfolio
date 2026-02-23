@@ -16,7 +16,7 @@ const AboutSection = () => {
     </h2>
 
     <p className="about-info">
-      <span className="point-word">효율적이고 깔끔한 코드</span> 와 <span className="point-word">간결한 설계</span> 를 먼저 생각하는
+      <span className="point-word">효율적인 방법</span> 과 <span className="point-word">깔끔하고 간결한 설계</span> 를 먼저 생각하는
       <br />
       열정 가득한 개발자예요
     </p>

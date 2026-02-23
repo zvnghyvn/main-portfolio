@@ -74,6 +74,36 @@ const projects = [
     demoUrl: 'https://just-spill-it.vercel.app',
   },
   {
+    id: 'trueText',
+    title: 'True Text',
+    keyword: 'API 번역 서비스',
+    period: '2025.08',
+    type: '개인 프로젝트',
+    contribution: '기여도 100%',
+    description: `TrueText는 번역 결과를 단순히 보여주는 것을 넘어, 
+    역번역과 GPT의 짧은 피드백까지 한 번에 제공하는 **쉽고 정확한 번역 서비스**입니다.`,
+    features: [
+      'Google Translate API와 OpenAI GPT-3.5 API 연동을 통한 번역 및 피드백 기능 구현',
+      '번역, 역번역, 피드백 표시까지 한 번에 처리하는 사용자 흐름 설계',
+      '입력 글자 수 실시간 표시 및 제한, 복사 버튼 등 사용자 편의 기능 구현',
+    ],
+    media: [
+      {
+        type: 'image',
+        src: '/images/img_project_trueText_01.png',
+        alt: 'True Text 메인 화면',
+      },
+      {
+        type: 'image',
+        src: '/images/img_project_trueText_02.png',
+        alt: 'True Text 번역 결과',
+      },
+    ],
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express'],
+    tools: ['Github', 'Notion', 'Vercel'],
+    demoUrl: 'https://true-text.vercel.app',
+  },
+  {
     id: 'portfolio',
     title: 'My Portfolio',
     keyword: '포트폴리오 사이트',
@@ -107,36 +137,6 @@ const projects = [
     techStack: ['React', 'JavaScript', 'styled-components', 'Vite'],
     tools: ['Github', 'Figma', 'Notion', 'Vercel'],
     demoUrl: 'https://zvnghyvn.vercel.app',
-  },
-  {
-    id: 'trueText',
-    title: 'True Text',
-    keyword: 'API 번역 서비스',
-    period: '2025.08',
-    type: '개인 프로젝트',
-    contribution: '기여도 100%',
-    description: `TrueText는 번역 결과를 단순히 보여주는 것을 넘어, 
-    역번역과 GPT의 짧은 피드백까지 한 번에 제공하는 **쉽고 정확한 번역 서비스**입니다.`,
-    features: [
-      'Google Translate API와 OpenAI GPT-3.5 API 연동을 통한 번역 및 피드백 기능 구현',
-      '번역, 역번역, 피드백 표시까지 한 번에 처리하는 사용자 흐름 설계',
-      '입력 글자 수 실시간 표시 및 제한, 복사 버튼 등 사용자 편의 기능 구현',
-    ],
-    media: [
-      {
-        type: 'image',
-        src: '/images/img_project_trueText_01.png',
-        alt: 'True Text 메인 화면',
-      },
-      {
-        type: 'image',
-        src: '/images/img_project_trueText_02.png',
-        alt: 'True Text 번역 결과',
-      },
-    ],
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express'],
-    tools: ['Github', 'Notion', 'Vercel'],
-    demoUrl: 'https://true-text.vercel.app',
   },
   {
     id: 'designer',

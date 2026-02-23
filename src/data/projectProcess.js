@@ -263,6 +263,102 @@ const projectProcess = [
     },
   },
   {
+    id: 'trueText',
+    thumbnail: '/images/img_project_trueText_02.png',
+    demoUrl: 'https://true-text.vercel.app',
+    githubUrl: 'https://github.com/zvnghyvn/true-text',
+    videoUrl: 'https://youtu.be/s-RAK8J03eU',
+    presentationUrl: '',
+
+    overview: {
+      name: 'True Text',
+      period: '2025.08',
+      members: '개인 프로젝트',
+      role: '기여도 100%',
+    },
+
+    intro: {
+      description: `TrueText는 번역 결과를 **역번역과 GPT 분석을 통해 객관적으로 평가**하는 웹 서비스입니다.  
+      단순 번역기와 달리, 번역이 원문 의미를 잘 전달하는지, 부자연스럽거나 잘못된 부분은 없는지를 쉽게 확인할 수 있습니다.`,
+      purpose: `API 연동 연습을 위해 진행하였으며, 자주 번역기를 사용하면서도 가끔 '이게 정말 맞는 번역인지' **궁금했던 경험을 토대로** 번역 결과의 정확성을 검증하는 서비스를 개발했습니다.`,
+      notionUrl: 'https://www.notion.so/TrueText-TT-249bb56acd1180ae9a89ddc8911e8820',
+    },
+
+    techStack: [
+      {
+        category: 'Frontend',
+        tech: ['JavaScript', 'HTML5', 'CSS3'],
+        reason: '프레임워크 없이 바닐라 JavaScript로 구현해 API 연동과 DOM 조작을 직접 처리했습니다.'
+      },
+      {
+        category: 'API',
+        tech: ['Google Translation API', 'OpenAI GPT API'],
+        reason: '번역과 조언 기능을 위해 API를 연동했습니다.'
+      },
+      {
+        category: 'Backend',
+        tech: ['Node.js'],
+        reason: 'API 키 보호와 서버 환경 변수를 위해 Node.js를 사용했습니다.'
+      },
+    ],
+
+    contribut: {
+      role: [
+        '개인 프로젝트로 기획, 개발, 배포까지 전 과정을 단독 수행',
+        '번역 API 및 GPT API 연동, UI 구성, DOM 조작 구현',
+        'Node.js를 이용한 API 키 보호 및 환경 변수 관리',
+      ],
+      function: [
+        {
+          title: 'GPT 분석 조언',
+          content: '원문과 번역문을 비교하여 GPT가 번역 품질을 평가하고 개선된 번역안을 제안하도록 구현했습니다.',
+        },
+        {
+          title: 'API 키 보안 처리',
+          content: 'Node.js 서버에서 환경 변수를 관리해 API 키가 클라이언트에 직접 노출되지 않도록 보호했습니다.',
+        },
+      ],
+    },
+
+    troubleshooting: [
+      {
+        title: 'API 키 보안 문제',
+        problem: `Google 번역 API 연동 과정에서, API 키를 .env 파일로 관리하더라도 클라이언트에서 직접 호출 시 네트워크 요청에 노출되는 문제가 있었습니다.  
+        외부에 유출될 수 있어 보안상 매우 위험했습니다.`,
+        solution: `Node.js 서버를 만들어 번역 요청을 서버에서 처리하도록 구조를 변경했습니다.  
+        클라이언트는 서버 엔드포인트로만 요청을 보내고, 서버 내부에서 API 키를 사용해 Google 번역 API를 호출하도록 설계했습니다.  
+        환경 변수는 .env 파일로 로컬에서 안전하게 관리했습니다.`,
+        code: `
+          // server/index.js
+          const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+
+          app.post('/api/translate', async (req, res) => {
+            const translation = await translateText({ q: text, source, target });
+            const backTranslation = await translateText({ q: translation, source: target, target: source });
+            res.json({ translation, backTranslation });
+          });
+          `,
+        result: `API 키가 네트워크에 노출되지 않으면서 번역/역번역이 안정적으로 동작하도록 개선했습니다.`,
+      },
+    ],
+
+    flow: {
+      description: '원문 입력 (결과보기 버튼 클릭)→ 서버에 번역/역번역 API 요청 → GPT API로 분석 및 조언 요청 → 모든 결과(번역·역번역·조언)를 한 번에 받아 UI에 표시',
+      image: '/images/img_flow_truetext.jpg',
+    },
+
+    review: {
+      good: `API 연습을 하면서, **원했던 편리한 번역 서비스를 직접 만들 수 있어서** 만족스러웠습니다.  
+      한 번에 번역·역번역·GPT 조언을 볼 수 있는 구조를 구현한 점이 특히 마음에 들었습니다.`,
+
+      hard: `**클라이언트와 서버의 역할 구분과 요청 흐름을 안정시키는 과정**이 어려웠습니다. 해당 부분은 더 연습이 필요할 것 같습니다.`,
+
+      regret: `사용하려던 번역 API들이 유료로 전환되어, 여러 번역기 결과 차이를 비교해보는 기능을 구현하지 못한 점이 아쉽습니다.`,
+
+      improve: `음성으로 번역문을 읽어주고, 사용자가 말한 내용을 번역하는 기능을 추가해보고 싶습니다.`,
+    }
+  },
+  {
     id: 'portfolio',
     thumbnail: '/images/img_project_main_04.png',
     demoUrl: 'https://zvnghyvn.vercel.app',
@@ -369,102 +465,6 @@ const projectProcess = [
 
       improve: `추후 애니메이션과 전환 효과를 추가하여 더 완성도 있는 사용자 경험을 만들고, 방문자 흐름을 파악할 수 있는 간단한 로깅 기능도 도입해볼 예정입니다.`,
     },
-  },
-  {
-    id: 'trueText',
-    thumbnail: '/images/img_project_trueText_02.png',
-    demoUrl: 'https://true-text.vercel.app',
-    githubUrl: 'https://github.com/zvnghyvn/true-text',
-    videoUrl: 'https://youtu.be/s-RAK8J03eU',
-    presentationUrl: '',
-
-    overview: {
-      name: 'True Text',
-      period: '2025.08',
-      members: '개인 프로젝트',
-      role: '기여도 100%',
-    },
-
-    intro: {
-      description: `TrueText는 번역 결과를 **역번역과 GPT 분석을 통해 객관적으로 평가**하는 웹 서비스입니다.  
-      단순 번역기와 달리, 번역이 원문 의미를 잘 전달하는지, 부자연스럽거나 잘못된 부분은 없는지를 쉽게 확인할 수 있습니다.`,
-      purpose: `API 연동 연습을 위해 진행하였으며, 자주 번역기를 사용하면서도 가끔 '이게 정말 맞는 번역인지' **궁금했던 경험을 토대로** 번역 결과의 정확성을 검증하는 서비스를 개발했습니다.`,
-      notionUrl: 'https://www.notion.so/TrueText-TT-249bb56acd1180ae9a89ddc8911e8820',
-    },
-
-    techStack: [
-      {
-        category: 'Frontend',
-        tech: ['JavaScript', 'HTML5', 'CSS3'],
-        reason: '프레임워크 없이 바닐라 JavaScript로 구현해 API 연동과 DOM 조작을 직접 처리했습니다.'
-      },
-      {
-        category: 'API',
-        tech: ['Google Translation API', 'OpenAI GPT API'],
-        reason: '번역과 조언 기능을 위해 API를 연동했습니다.'
-      },
-      {
-        category: 'Backend',
-        tech: ['Node.js'],
-        reason: 'API 키 보호와 서버 환경 변수를 위해 Node.js를 사용했습니다.'
-      },
-    ],
-
-    contribut: {
-      role: [
-        '개인 프로젝트로 기획, 개발, 배포까지 전 과정을 단독 수행',
-        '번역 API 및 GPT API 연동, UI 구성, DOM 조작 구현',
-        'Node.js를 이용한 API 키 보호 및 환경 변수 관리',
-      ],
-      function: [
-        {
-          title: 'GPT 분석 조언',
-          content: '원문과 번역문을 비교하여 GPT가 번역 품질을 평가하고 개선된 번역안을 제안하도록 구현했습니다.',
-        },
-        {
-          title: 'API 키 보안 처리',
-          content: 'Node.js 서버에서 환경 변수를 관리해 API 키가 클라이언트에 직접 노출되지 않도록 보호했습니다.',
-        },
-      ],
-    },
-
-    troubleshooting: [
-      {
-        title: 'API 키 보안 문제',
-        problem: `Google 번역 API 연동 과정에서, API 키를 .env 파일로 관리하더라도 클라이언트에서 직접 호출 시 네트워크 요청에 노출되는 문제가 있었습니다.  
-        외부에 유출될 수 있어 보안상 매우 위험했습니다.`,
-        solution: `Node.js 서버를 만들어 번역 요청을 서버에서 처리하도록 구조를 변경했습니다.  
-        클라이언트는 서버 엔드포인트로만 요청을 보내고, 서버 내부에서 API 키를 사용해 Google 번역 API를 호출하도록 설계했습니다.  
-        환경 변수는 .env 파일로 로컬에서 안전하게 관리했습니다.`,
-        code: `
-          // server/index.js
-          const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
-
-          app.post('/api/translate', async (req, res) => {
-            const translation = await translateText({ q: text, source, target });
-            const backTranslation = await translateText({ q: translation, source: target, target: source });
-            res.json({ translation, backTranslation });
-          });
-          `,
-        result: `API 키가 네트워크에 노출되지 않으면서 번역/역번역이 안정적으로 동작하도록 개선했습니다.`,
-      },
-    ],
-
-    flow: {
-      description: '원문 입력 (결과보기 버튼 클릭)→ 서버에 번역/역번역 API 요청 → GPT API로 분석 및 조언 요청 → 모든 결과(번역·역번역·조언)를 한 번에 받아 UI에 표시',
-      image: '/images/img_flow_truetext.jpg',
-    },
-
-    review: {
-      good: `API 연습을 하면서, **원했던 편리한 번역 서비스를 직접 만들 수 있어서** 만족스러웠습니다.  
-      한 번에 번역·역번역·GPT 조언을 볼 수 있는 구조를 구현한 점이 특히 마음에 들었습니다.`,
-
-      hard: `**클라이언트와 서버의 역할 구분과 요청 흐름을 안정시키는 과정**이 어려웠습니다. 해당 부분은 더 연습이 필요할 것 같습니다.`,
-
-      regret: `사용하려던 번역 API들이 유료로 전환되어, 여러 번역기 결과 차이를 비교해보는 기능을 구현하지 못한 점이 아쉽습니다.`,
-
-      improve: `음성으로 번역문을 읽어주고, 사용자가 말한 내용을 번역하는 기능을 추가해보고 싶습니다.`,
-    }
   },
   {
     id: 'designer',

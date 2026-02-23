@@ -42,7 +42,7 @@ const Header = () => {
       {/* 공통 */}
       <HeaderMain>
         <h1 className="header-intro">
-          안녕하세요. 소통하는 프론트엔드 개발자, 권정현입니다.
+          AI를 적극 활용하는 개발자, 권정현입니다.
         </h1>
 
         <div className="header-contact flex">
