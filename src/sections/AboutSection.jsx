@@ -6,7 +6,7 @@ const AboutSection = () => {
   <About id="about">
     <h2>
       <TypeAnimation 
-        sequence={['AI를 적극 활용하는', 2000, '설계를 좋아하는', 2000, '소통하는', 2000]}
+        sequence={['AI를 적극 활용하는', 2000, '구조화를 좋아하는', 2000, '소통하는', 2000]}
         wrapper="span"
         speed={50}
         repeat={Infinity}
